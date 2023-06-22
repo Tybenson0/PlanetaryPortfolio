@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+html {
+  background-color: #000000;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: 0;
+  width: 250%;
+  height: 200%;
+  border-radius: 100%;
+  z-index: -1;
+  background-image: url('/public/Stars-bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: Universe-Rotation 360s infinite linear;
+}
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+}
+.level-0-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import 'animations.css';
+/* code below is for the campsite */
+.campsite-container-0 {
+  height: 65%;
+  width: 100%;
+  border-top: 2px solid white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  align-items: stretch;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.campfire-container {
+  padding-top: .5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  z-index: 2;
+  overflow:visible;
+  width: 100%;
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 8/10;
+  rotate: -3deg;
+}
+.moon {
+  width: 175%;
+  rotate: 40deg;
+  
+}
+.fire-shadow {
+  --opacity-start: 0.55;
+  --opacity-mid: 0.70;
+  --opacity-end: 0.85;
+  position: absolute; 
+  width: 18rem;
+  height: 6.5rem;
+  border-radius: 100%;
+  transform: translatex(-.5rem) translateY(-.5rem);
+  box-shadow: 0 0 30px 5px black, inset 0 0px 30px 0px black;
+  opacity: .7;
+  animation: flickerEffect 2s infinite;
+}
+.fire-shadow:nth-of-type(2n) {
+  --opacity-start: 0.60;
+  --opacity-mid: 0.70;
+  --opacity-end: 0.82;
+  width: 20rem;
+  height: 7rem;
+  box-shadow: 0 0 30px 10px black, inset 0 0px 50px 0px black;
+  opacity: .75;
+}
+.fire-shadow:nth-of-type(3n) {
+  --opacity-start: 0.7;
+  --opacity-mid: 0.8;
+  --opacity-end: 0.9;
+  width: 23rem;
+  height: 7.5rem;
+  box-shadow: 0 0 50px 20px black, inset 0 0px 70px 0px black;
+  opacity: .8;
+}
+.fire-shadow:nth-of-type(4n) {
+  --opacity-start: 0.9;
+  --opacity-mid: 0.93;
+  --opacity-end: 0.87;
+  width: 25rem;
+  height: 8.5rem;
+  box-shadow: 0 0 10px 20px black, inset 0 0px 70px 0px black;
+  opacity: .9;
+}
+.fire-shadow:nth-of-type(5n) {
+  width: 25rem;
+  height: 8.5rem;
+  box-shadow: 0 0 5px 200px black, inset 0 0px 70px 0px black;
+  opacity: 1;
+  animation: none;
+}
+.moon-container {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  grid-column: 1/7;
+  grid-row: 9/11;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* end of campsite */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) and (max-width: 1024px) {
+  body::before {
+    background-image: url(/public/Stars-bg-tablet.svg);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(/public/Stars-bg-desktop.svg);
   }
 }

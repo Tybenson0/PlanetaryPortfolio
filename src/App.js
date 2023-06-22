@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import './normalizequantum.css'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='level-0-container'>
+      <CampSite />
+    </section>
   );
 }
 
 export default App;
+
+
+const CampSite = () => {
+  return (
+    <div className='campsite-container-0'> 
+      <div className='campfire-container'>
+      <div className="fire">
+      <div className="flames">
+          <div className="flame"></div>
+          <div className="flame"></div>
+          <div className="flame"></div>
+          <div className="flame"></div>
+      </div>
+      <div className="logs"></div>
+    </div>
+      </div>
+      <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
+      <div className='fire-shadow'></div>
+      <div className='fire-shadow'></div>
+      <div className='fire-shadow'></div>
+      <div className='fire-shadow'></div>
+      <div className='fire-shadow'></div>
+      </div>
+    </div>
+  );
+};
