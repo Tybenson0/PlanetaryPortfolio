@@ -1,6 +1,15 @@
+@import 'animations.css';
 html {
   background-color: #000000;
   overflow: hidden;
+}
+
+.url  {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 2px solid white;
+  background-color: white;
+  opacity: 40%;
 }
 body::before {
   content: "";
@@ -29,16 +38,55 @@ html, body, #root {
   justify-content: flex-end;
 }
 
-@import 'animations.css';
+
 /* code below is for the campsite */
 .campsite-container-0 {
-  height: 65%;
+  height: 100%;
   width: 100%;
-  border-top: 2px solid white;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr);
   align-items: stretch;
+}
+.moon {
+  width: 175%;
+  rotate: 40deg;
+  position: relative;
+  z-index: 2;
+}
+.riebeck-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  grid-row: 8/10;
+  grid-column: 4/6;
+  z-index: 4;
+  transform: translate(-1.5rem, -.5rem);
+
+}
+.riebeck {
+  width: 7rem;
+  height: 7rem;
+}
+.tree-container {
+  width: 100%;
+  height: 100%;
+  grid-row: 8/10;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.tree {
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  position: absolute;
 }
 .campfire-container {
   padding-top: .5rem;
@@ -47,7 +95,7 @@ html, body, #root {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   overflow:visible;
   width: 100%;
   height: 100%;
@@ -55,57 +103,159 @@ html, body, #root {
   grid-row: 8/10;
   rotate: -3deg;
 }
-.moon {
-  width: 175%;
-  rotate: 40deg;
-  
+.smoke-container {
+  padding: 0;
+  grid-column: 3/4;
+  grid-row: 7/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(.5rem);
 }
-.fire-shadow {
-  --opacity-start: 0.55;
-  --opacity-mid: 0.70;
-  --opacity-end: 0.85;
-  position: absolute; 
-  width: 18rem;
-  height: 6.5rem;
+
+.smoke 
+{
+  position: fixed;
+  list-style: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #848884;
+  border-radius: 50%;
+  transform: translate(1rem);
+}
+
+.smoke:nth-child(even) 
+{
+  animation: animateEven 2.8s linear infinite;
+}
+.smoke:nth-child(odd) 
+{
+  animation: animateOdd 2.8s linear infinite;
+}
+.smoke:nth-child(1) {
+  animation-delay: 0s;
+}
+.smoke:nth-child(2) {
+  animation-delay: .4s;
+}
+.smoke:nth-child(3) {
+  animation-delay: .8s;
+}
+.smoke:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.smoke:nth-child(5) {
+  animation-delay: 1.6s;
+}
+.smoke:nth-child(6) {
+  animation-delay: 2s;
+}
+.smoke:nth-child(7) {
+  animation-delay: 2.4s;
+}
+.smoke:nth-child(8) {
+  animation-delay: 2.8s;
+}
+
+.fire {
+  top: 50%;
+  left: 50%;
+  height: 12vw;
+  width: 12vw;
+  border: 0 0 0px 2px black;
   border-radius: 100%;
-  transform: translatex(-.5rem) translateY(-.5rem);
-  box-shadow: 0 0 30px 5px black, inset 0 0px 30px 0px black;
-  opacity: .7;
-  animation: flickerEffect 2s infinite;
 }
-.fire-shadow:nth-of-type(2n) {
-  --opacity-start: 0.60;
-  --opacity-mid: 0.70;
-  --opacity-end: 0.82;
-  width: 20rem;
-  height: 7rem;
-  box-shadow: 0 0 30px 10px black, inset 0 0px 50px 0px black;
-  opacity: .75;
+
+.fire .flames {
+  width: 60%;
+  height: 60%;
+  transform: translateX(-50%) rotate(45deg);
+  filter: drop-shadow(-10px -10px 30px orange )
 }
-.fire-shadow:nth-of-type(3n) {
-  --opacity-start: 0.7;
-  --opacity-mid: 0.8;
-  --opacity-end: 0.9;
-  width: 23rem;
-  height: 7.5rem;
-  box-shadow: 0 0 50px 20px black, inset 0 0px 70px 0px black;
+
+.fire .flames .flame {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 0%;
+  height: 0%;
+  background-color: #FFDC01;
+  border-radius: 1vw;
+}
+
+.fire .flames .flame:nth-child(2n + 1) {
+  animation: flameodd 1.5s ease-in infinite;
+}
+
+.fire .flames .flame:nth-child(2n) {
+  animation: flameeven 1.5s ease-in infinite;
+}
+
+.fire .flames .flame:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fire .flames .flame:nth-child(2) {
+  animation-delay: 0.375s;
+}
+
+.fire .flames .flame:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.fire .flames .flame:nth-child(4) {
+  animation-delay: 1.125s;
+}
+
+.fire .logs {
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 15%;
+  border-radius: 100%;
+}
+
+.fire .logs:before,
+.fire .logs:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+  background-color: #70392F;
+}
+
+.fire .logs:before {
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: #612E25;
+}
+
+.fire-shadow {
+  --opacity-start: 0.70;
+  --opacity-mid: 0.65;
+  --opacity-end: 0.75;
+  z-index: 2;
+  grid-column: 1/7;
+  grid-row: 8/10;
+  border-radius: 50%;
+  justify-self: center;
+  transform: translatey(2rem);
+  box-shadow: 0 0 40px 80px black, inset 0 0px 15px 15px black;
   opacity: .8;
+  animation: flickerEffect 5s infinite; 
 }
-.fire-shadow:nth-of-type(4n) {
-  --opacity-start: 0.9;
-  --opacity-mid: 0.93;
-  --opacity-end: 0.87;
-  width: 25rem;
-  height: 8.5rem;
-  box-shadow: 0 0 10px 20px black, inset 0 0px 70px 0px black;
-  opacity: .9;
-}
-.fire-shadow:nth-of-type(5n) {
-  width: 25rem;
-  height: 8.5rem;
-  box-shadow: 0 0 5px 200px black, inset 0 0px 70px 0px black;
-  opacity: 1;
-  animation: none;
+.fire-shadow::before {
+  content: '';
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 10px black;
 }
 .moon-container {
   display: flex;
