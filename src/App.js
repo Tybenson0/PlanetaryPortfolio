@@ -19,7 +19,7 @@ export default App;
 const CampSite = () => {
   return (
     <div className='campsite-container-0'> 
-      <div class="tree-container"><img src='tree-2.svg' alt='pine tree' className='tree'></img></div>
+      <div className="tree-container"><img src='tree-2.svg' alt='pine tree' className='tree'></img></div>
       <ul className='smoke-container'>
         <li className='smoke'></li>
         <li className='smoke'></li>
@@ -42,7 +42,7 @@ const CampSite = () => {
       </div>
       </div>
       <div className='fire-shadow'></div>
-      <div className='riebeck-container'><img src='riebeck.webp' alt='riebeck' className='riebeck'></img></div>
+      <div className='esker-container'><img src='esker.webp' alt='esker' className='esker'></img></div>
       <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
       </div>
     </div>
