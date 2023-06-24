@@ -158,72 +158,12 @@
   }
   @keyframes EskerRock {
     0% {
-        transform: scalex(-1) rotate(-18deg);
-    }
-    3% {
-        transform: scalex(-1) rotate(-18deg);
-    }
-    5% {
-        transform: scalex(-1) rotate(-19deg);
-    }
-    10% {
-        transform: scalex(-1) rotate(-20deg);
-    }
-    15% {
-        transform: scalex(-1) rotate(-21deg);
-    }
-    20% {
-        transform: scalex(-1) rotate(-22deg);
-    }
-    25% {
-        transform: scalex(-1) rotate(-23deg);
-    }
-    30% {
-        transform: scalex(-1) rotate(-24deg);
-    }
-    35% {
         transform: scalex(-1) rotate(-25deg);
-    }
-    40% {
-        transform: scalex(-1) rotate(-25deg);
-    }
-    45% {
-        transform: scalex(-1) rotate(-26deg);
     }
     50% {
-        transform: scalex(-1) rotate(-26deg);
-    }
-    55% {
-        transform: scalex(-1) rotate(-26deg);
-    }
-    60% {
-        transform: scalex(-1) rotate(-25deg);
-    }
-    65% {
-        transform: scalex(-1) rotate(-24deg);
-    }
-    70% {
-        transform: scalex(-1) rotate(-23deg);
-    }
-    80% {
-        transform: scalex(-1) rotate(-22deg);
-    }
-    80% {
-        transform: scalex(-1) rotate(-21deg);
-    }
-    80% {
-        transform: scalex(-1) rotate(-20deg);
-    }
-    90% {
-        transform: scalex(-1) rotate(-19deg);
-    }
-    95% {
-        transform: scalex(-1) rotate(-18deg);
-    }
-    98% {
-        transform: scalex(-1) rotate(-17deg);
+      transform: scalex(-1) rotate(-21deg);
     }
     100% {
-        transform: scalex(-1) rotate(-18deg);
+        transform: scalex(-1) rotate(-25deg);
     }
   }

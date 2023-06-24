@@ -78,6 +78,24 @@ html, body, #root {
   transform-origin: 50% 100%;
   animation: EskerRock 14s ease-in-out infinite;
 }
+.ship-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  grid-column: 2/3;
+  grid-row: 8/10;
+  transform: translate(-.5rem, -.5rem) rotate(-10deg);
+}
+.ship {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+}
 .tree-container-left {
   width: 100%;
   height: 100%;
@@ -156,6 +174,7 @@ html, body, #root {
   z-index: 0;
   grid-column: 10/11;
   transform: translate(.5rem, -1rem);
+  filter: brightness(35%);
 }
 .tree:nth-of-type(10) {
   width: 7rem;
@@ -163,6 +182,7 @@ html, body, #root {
   z-index: 0;
   grid-column: 11/12;
   transform: translate(.5rem, -1rem);
+  
 }
 .tree:nth-of-type(11) {
   width: 7rem;
@@ -170,6 +190,7 @@ html, body, #root {
   z-index: 2;
   grid-column: 12/13;
   transform: translate(.5rem, -2rem);
+  filter: brightness(25%);
 }
 .tree:nth-of-type(12) {
   width: 7rem;
@@ -177,6 +198,7 @@ html, body, #root {
   z-index: 2;
   grid-column: 13/14;
   transform: translate(1rem, 0rem);
+  filter: brightness(20%);
 }
 .campfire-container {
   padding-top: .5rem;
@@ -338,8 +360,7 @@ html, body, #root {
   align-self: end;
   border-radius: 50%;
   opacity: .8;
-  border: 1px solid white;
-  box-shadow: 0 0 40px 80px black, inset 0 0px 15px 15px black;
+  box-shadow: 0 0 40px 80px black, inset 0 0px 15px 25px black;
   animation: flickerEffect 5s infinite; 
 }
 .fire-shadow::before {

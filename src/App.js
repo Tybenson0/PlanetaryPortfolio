@@ -57,6 +57,7 @@ const CampSite = () => {
       </div>
       <div className='fire-shadow'></div>
       <div className='esker-container'><img src='esker.webp' alt='esker' className='esker'></img></div>
+      <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'></img></div>
       <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
       </div>
     </div>
