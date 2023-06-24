@@ -19,7 +19,21 @@ export default App;
 const CampSite = () => {
   return (
     <div className='campsite-container-0'> 
-      <div className="tree-container"><img src='tree-2.svg' alt='pine tree' className='tree'></img></div>
+      <div className="tree-container-left">
+        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-4.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-4.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+      </div>
+      
       <ul className='smoke-container'>
         <li className='smoke'></li>
         <li className='smoke'></li>
