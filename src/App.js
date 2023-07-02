@@ -1,13 +1,29 @@
-import './normalizequantum.css'
+import {useDispatch, useSelector} from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
+import { toggle, selectString } from './app/esker';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import Nav from './nav.js'
-
+import Home from './home';
+import Projects from './projects';
+import Skills from './skills';
+import Biography from './biography';
+import Contact from './contact';
+import Nav from './nav.js';
+import './normalizequantum.css';
+import './App.css';
 function App() {
   return (
     <>
     <Url />
     <section className='level-0-container'>
     <Nav />
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='projects' element={<Projects />}></Route>
+      <Route path='skills' element={<Skills />}></Route>
+      <Route path='biography' element={<Biography />}></Route>
+      <Route path='contact' element={<Contact />}></Route>
+    </Routes>
       <CampSite />
     </section>
     </>
@@ -18,9 +34,42 @@ export default App;
 
 
 const CampSite = () => {
+  const { display, selectedString } = useSelector(state => state.esker);
+  const dispatch = useDispatch();
+  const [text, setText] = useState('');
+
+  useEffect(() => {
+    let typingEffectTimeout;
+  
+    // Set a delay of 2000 milliseconds (2 seconds)
+    const delay = 2000;
+  
+    // Function to start the typing effect
+    const startTypingEffect = () => {
+      let currentIndex = 0;
+      const typingEffectInterval = setInterval(() => {
+        if (currentIndex < selectedString.length) {
+          setText(selectedString.slice(0, currentIndex + 1));
+          currentIndex++;
+        } else {
+          clearInterval(typingEffectInterval);
+        }
+      }, 20);
+    };
+  
+    // Start the typing effect after the delay
+    typingEffectTimeout = setTimeout(startTypingEffect, delay);
+  
+    // Clean up the timeout if the component unmounts or the selectedString changes
+    return () => clearTimeout(typingEffectTimeout);
+  }, [selectedString]);
+  useEffect(() => {
+    setText('');
+  }, [selectedString]);
   return (
     <div className='campsite-container-0'> 
       <div className="tree-container-left">
+        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
         <img src='tree-2.svg' alt='pine tree' className='tree'></img>
         <img src='tree-1.svg' alt='pine tree' className='tree'></img>
         <img src='tree-1.svg' alt='pine tree' className='tree'></img>
@@ -57,8 +106,14 @@ const CampSite = () => {
       </div>
       </div>
       <div className='fire-shadow'></div>
-      <div className='esker-container'><img src='esker.webp' alt='esker' className='esker'></img></div>
-      <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'></img></div>
+      <div className='eskers-dialogue-container'>
+        <div className='esker-dialogue-bg'>
+          <h1 className='esker-dialogue'>{text}</h1>
+        </div>
+      </div>
+      <div className='esker-container' onClick={() => {dispatch(selectString(1))}}><img src='esker.webp' alt='esker' className='esker'></img></div>
+      <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'>
+      </img></div>
       <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
       </div>
     </div>
