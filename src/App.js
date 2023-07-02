@@ -63,6 +63,7 @@ const CampSite = () => {
     // Clean up the timeout if the component unmounts or the selectedString changes
     return () => clearTimeout(typingEffectTimeout);
   }, [selectedString]);
+  
   useEffect(() => {
     setText('');
   }, [selectedString]);
