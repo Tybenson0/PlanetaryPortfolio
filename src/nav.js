@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch} from 'react-redux';
-import { selectString } from './app/esker';
+import { selectString,} from './app/esker';
 import {Link} from 'react-router-dom';
 const Nav = () => {
     const dispatch = useDispatch();
@@ -14,13 +14,14 @@ const Nav = () => {
                     <Link to="skills" className='nav-link'>skills</Link>
                 </li>
                 <li className='nav-li'>
-                    <Link to="biography" className='nav-link'>biography</Link>
+                    <Link to="biography" className='nav-link'  >biography</Link>
                 </li>
                 <li className='nav-li'>
                     <Link to="contact" className='nav-link' onClick={() => dispatch(selectString(0))}>contact</Link>
                 </li>
                 <li className='nav-li'>
-                    <Link to="/" className='nav-link' onClick={() => dispatch(selectString(1))}>home</Link>
+                    <Link to="/" className='nav-link' 
+                    onClick={() => {setTimeout(() => {dispatch(selectString(1)); });}}>home</Link>
                 </li>
             </ul>
         </div>

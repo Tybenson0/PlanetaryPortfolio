@@ -3,14 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 export const eskerSlice = createSlice({
   name: 'esker',
   initialState: {
-    strings: ['Woah! how did you get there? no worries',
-     'gfdjkjfkl;jdajfkldlafjdkl;ajkslf', 
-     'String 3'
-    ],
-    selectedString: '',
+    // Existing state properties
+    strings: ['Woah! how did you get there? no worries', 'gfdjkjfkl;jdajfkldlafjdkl;ajkslf', 'String 3'],
+    selectedString: 'Woah, how did you get here?.... no worries, my name is Esker. Welcome to the Planetary Portfolio ',
     display: false,
   },
   reducers: {
+    // Existing reducers
     toggle: state => {
       state.display = !state.display;
     },
@@ -20,7 +19,8 @@ export const eskerSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { toggle, selectString } = eskerSlice.actions;
+
+// Action creators
+export const { toggle, selectString,} = eskerSlice.actions;
 
 export default eskerSlice.reducer;

@@ -1,11 +1,130 @@
 @keyframes Universe-Rotation {
-    0% {
-      transform: rotate(0deg);
-    }
     100% {
       transform: rotate(360deg);
     }
+}
+
+@keyframes first-orbit{
+  0% {
+    transform: translate(-100vw, 75%);
+    opacity: 1;
   }
+  25% {
+    transform: translate(0%, 55%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 35%);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(100vw, 35%);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(0%, 75%);
+    opacity: 0;
+  }
+  95% {
+    transform: translate(0%, 75%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100vw, 75%);
+    opacity: 0;
+  }
+}
+@keyframes second-orbit{
+  0% {
+    transform: translate(-100vw, 55%);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0%, 25%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(125vw, 0%);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(125vw, 0%);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(0%, 25%);
+    opacity: 0;
+  }
+  95% {
+    transform: translate(0%, 25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100vw, 35%);
+    opacity: 0;
+  }
+}
+@keyframes third-orbit{
+  0% {
+    transform: translate(-100vw, 35%);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0%, -5%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -25%);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(100vw, -25%);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(0%, -5%);
+    opacity: 0;
+  }
+  95% {
+    transform: translate(0%, 25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100vw, 35%);
+    opacity: 0;
+  }
+}
+@keyframes fourth-orbit{
+  0% {
+    transform: translate(-100vw, 15%);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0%, -10%);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, -20%);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(100vw, -10%);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(0%, 75%);
+    opacity: 0;
+  }
+  95% {
+    transform: translate(0%, 75%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100vw, 75%);
+    opacity: 0;
+  }
+}
+
  
   @keyframes animateEven 
   {
