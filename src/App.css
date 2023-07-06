@@ -50,18 +50,18 @@ a {
 .eskers-dialogue-container {
   width: 75%;
   height: fit-content;
-  grid-row: 8/9;
+  grid-row: 7/9;
   grid-column: 1/7;
   background-color: #fff;
   padding: 5px 0 5px 5px;
   border-radius: 5px;
   justify-self: center;
+  align-self: center;
   display: flex;
   align-items: flex-end;
   position: absolute;
   z-index: 5;
   overflow: hidden;
-  transform: translate(0, -4vh);
 }
 .esker-dialogue {
   width: fit-content;
@@ -420,7 +420,30 @@ html, body, #root {
   justify-content: center;
   transform: translate(.5rem);
 }
+.logs {
+  position: absolute;
+  width:3rem;
+  height: 5px;
+  transform: translate(-1rem, 1rem);
+}
 
+.logs:before,
+.logs:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw;
+  background-color: brown; /* Replace with the desired color */
+}
+
+.logs:before {
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: brown; /* Replace with the desired color */
+}
 .smoke 
 {
   position: fixed;
@@ -465,94 +488,6 @@ html, body, #root {
   animation-delay: 2.8s;
 }
 
-.fire {
-  top: 50%;
-  left: 50%;
-  height: 3rem;
-  width: 3rem;
-}
-
-.fire .flames {
-  width: 60%;
-  height: 60%;
-  transform: translateX(-50%) rotate(45deg);
-  filter: drop-shadow(-10px -10px 30px orange )
-}
-
-.fire .flames .flame {
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  width: 0%;
-  height: 0%;
-  background-color: #FFDC01;
-  border-radius: 1vw;
-}
-
-
-
-
-.fire .logs {
-  bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 15%;
-  border-radius: 100%;
-}
-
-.fire .logs:before,
-.fire .logs:after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(10deg);
-  height: 100%;
-  width: 100%;
-  border-radius: 1vw;
-  background-color: #70392F;
-}
-
-.fire .logs:before {
-  transform: translate(-50%, -50%) rotate(-10deg);
-  background-color: #612E25;
-}
-.fire-shadow-0 {
-  width: 120%;
-  height: 150%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 1/7;
-  grid-row: 8/10;
-  border-radius: 35%;
-  justify-self: center;
-  overflow: hidden;
-  z-index: 3;
-}
-.fire-shadow {
-  --opacity-start: 0.70;
-  --opacity-mid: 0.65;
-  --opacity-end: 0.75;
-  box-sizing: border-box;
-  transform: translatey(2rem);
-  border-radius: 50%;
-  opacity: .8;
-  box-shadow: 0 0 40px 80px black, inset 0 0px 15px 15px black;
-  animation: flickerEffect 5s infinite; 
-}
-.fire-shadow:after {
-  content: '';
-  --opacity-start: 0.70;
-  --opacity-mid: 0.65;
-  --opacity-end: 0.75;
-  width: 99%;
-  height: 99%;
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 0px 0px 0px 5px black, inset 0px 0px 20px 10px black;
-}
 .moon-container {
   display: flex;
   position: relative;

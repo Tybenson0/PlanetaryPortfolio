@@ -102,15 +102,24 @@ const CampSite = () => {
         <li className='smoke'></li>
       </ul>
       <div className='campfire-container'>
-      <div className="fire">
-      <div className="flames">
-          <div className="flame"></div>
-          <div className="flame"></div>
-          <div className="flame"></div>
-          <div className="flame"></div>
+      <div class="fire">
+      <div class="fire-left">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
       </div>
-      <div className="logs"></div>
+      <div class="fire-main">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
       </div>
+      <div class="fire-right">
+        <div class="main-fire"></div>
+        <div class="particle-fire"></div>
+      </div>
+      <div class="fire-bottom">
+        <div class="main-fire"></div>
+      </div>
+    </div>
+    <div class="logs"></div>
       </div>
       <div className='eskers-dialogue-container'>
             <p className='esker-dialogue'>{text}</p>
