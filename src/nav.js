@@ -8,7 +8,7 @@ const Nav = () => {
         <div className='nav-container-0'>
             <ul className='nav-ul'>
                 <li className='nav-li'>
-                    <Link to="projects" className='nav-link' onClick={() => dispatch(selectString())}>projects</Link>
+                    <Link to="projects" className='nav-link' onClick={() => dispatch(selectString(2))}>projects</Link>
                 </li>
                 <li className='nav-li'>
                     <Link to="skills" className='nav-link'>skills</Link>

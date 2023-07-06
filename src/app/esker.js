@@ -4,7 +4,7 @@ export const eskerSlice = createSlice({
   name: 'esker',
   initialState: {
     // Existing state properties
-    strings: ['Woah! how did you get there? no worries', 'gfdjkjfkl;jdajfkldlafjdkl;ajkslf', 'String 3'],
+    strings: ['Woah! how did you get there? no worries', 'gfdjkjfkl;jdajfkldlafjdkl;ajkslf', ''],
     selectedString: 'Woah, how did you get here?.... no worries, my name is Esker. Welcome to the Planetary Portfolio ',
     display: false,
   },
