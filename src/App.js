@@ -128,10 +128,10 @@ const CampSite = () => {
 const Planets = () => {
   return (
     <div className='planet-container-0'>
-      <img src='/hollow.webp' alt='hearth' className='planet-1' ></img>
-      <img src='/hearth.webp' alt='hearth' className='planet-2' ></img>
-      <img src='/bramble.webp' alt='hearth' className='planet-3' ></img>
-      <img src='/twins.webp' alt='hearth' className='planet-4' ></img>
+      <img src='/planet-3.svg' alt='hearth' className='planet-1' ></img>
+      <img src='/planet-1.svg' alt='hearth' className='planet-2' ></img>
+      <img src='/planet-2.svg' alt='hearth' className='planet-3' ></img>
+      <img src='/planet-4.svg' alt='hearth' className='planet-4' ></img>
     </div>
   );
 };
