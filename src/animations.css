@@ -1,4 +1,7 @@
 @keyframes Universe-Rotation {
+  0%{
+    transform: rotate(0deg);
+  }
     100% {
       transform: rotate(360deg);
     }
@@ -6,10 +9,11 @@
 
 @keyframes first-orbit{
   0% {
-    transform: translate(-125vw, 30vh);
+    transform: translate(-125vw, 30vh) ;
   }
   100% {
-    transform: translate(125vw, 5vh);
+    transform: translate(125vw, 5vh) ;
+    
   }
 }
 @keyframes second-orbit{
@@ -22,10 +26,10 @@
 }
 @keyframes third-orbit{
   0% {
-    transform: translate(-125vw, 15vh);
+    transform: translate(-125vw, 15vh) rotate(90deg);
   }
   100% {
-    transform: translate(125vw, -5vh);
+    transform: translate(125vw, -5vh) rotate(180deg);
   }
 }
 @keyframes fourth-orbit{

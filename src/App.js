@@ -44,8 +44,8 @@ const CampSite = () => {
   
 
   useEffect(() => {
-    
     let typingEffectTimeout;
+    let typingEffectInterval;
   
     // Set a delay of 2000 milliseconds (2 seconds)
     const delay = 0;
@@ -53,23 +53,30 @@ const CampSite = () => {
     // Function to start the typing effect
     const startTypingEffect = () => {
       let currentIndex = 0;
-      const typingEffectInterval = setInterval(() => {
+      typingEffectInterval = setInterval(() => {
         if (currentIndex < selectedString.length) {
           setText(selectedString.slice(0, currentIndex + 1));
           currentIndex++;
         } else {
           clearInterval(typingEffectInterval);
         }
-      }, 20);
+      }, 70);
     };
   
-    // Start the typing effect after the delay
-    typingEffectTimeout = setTimeout(startTypingEffect);
+    // Cancel the previous typing effect and start a new one
+    clearTimeout(typingEffectTimeout);
+    clearInterval(typingEffectInterval);
   
-    // Clean up the timeout if the component unmounts or the selectedString changes
-    return () => clearTimeout(typingEffectTimeout);
+    // Start the typing effect after the delay
+    typingEffectTimeout = setTimeout(startTypingEffect, delay);
+  
+    // Clean up the timeout and interval if the component unmounts or the selectedString changes
+    return () => {
+      clearTimeout(typingEffectTimeout);
+      clearInterval(typingEffectInterval);
+    };
   }, [selectedString]);
-
+  
   useEffect(() => {
     setText('');
   }, [selectedString]);
@@ -124,7 +131,7 @@ const CampSite = () => {
       <div className='eskers-dialogue-container'>
             <p className='esker-dialogue'>{text}</p>
       </div>
-      <div className='esker-container' ><img src='esker.webp' alt='esker' className='esker'></img></div>
+      <div className='esker-container' ><img src='esker.png' alt='esker' className='esker'></img></div>
       <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'>
       </img></div>
       <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
