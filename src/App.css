@@ -81,14 +81,13 @@ a {
   margin: 0; /* Prevent line breaks within the heading */
 }
 
-.test-1 {
+.projects-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   grid-row: 1/11;
   grid-column: 1/7;
-  background-color: red;
   opacity: 50%;
 }
 .test-2 {
@@ -203,7 +202,6 @@ html, body, #root {
   z-index: 9999;
   width: fit-content;
   height: 100%;
-  border: 1px solid white;
   grid-column: 1/4;
   grid-row: 1/4;
   position: absolute;
@@ -221,7 +219,7 @@ html, body, #root {
   padding: 2rem 1rem 1rem 2rem;
 }
 .nav-link {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: wilds;
     color: #E57A1B;
 }
@@ -246,6 +244,7 @@ html, body, #root {
   animation: first-orbit 15s ease-in-out infinite;
  filter: brightness(90%);
  transform-origin: 50% 50%;
+ z-index: 10;
 }
 .planet-2 {
   position: absolute;
@@ -255,6 +254,7 @@ html, body, #root {
   height: 60%;
   animation: second-orbit 20s linear infinite;
   filter: brightness(80%);
+  z-index: 9;
 }
 .planet-3 {
   position: absolute;
@@ -265,6 +265,7 @@ html, body, #root {
   animation: third-orbit 25s linear infinite;
   filter: brightness(70%);
   transform-origin: 50% 50%;
+  z-index: 8;
 }
 .planet-4 {
   position: absolute;
@@ -274,6 +275,7 @@ html, body, #root {
   height: 100%;
   animation: fourth-orbit 30s linear infinite;
   filter: brightness(60%);
+  z-index: 7;
 }
 
 
