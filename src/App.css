@@ -227,30 +227,109 @@ html, body, #root {
   
 }
 .project-link {
-  width: 5rem;
+  width: 4rem;
 }
-.test-2 {
+.skills-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   grid-row: 1/11;
   grid-column: 1/7;
-  background-color: blue;
-  opacity: 50%;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: var(--column);
+  grid-template-rows: var(--row);
 }
-.test-3 {
+.swiper-container {
+  grid-row: 2/6;
+  grid-column: 4/9;
+  width: 100%;
+}
+.skills-slide {
+  width: 100%;
+  height: 100%;
+}
+.skills-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.skills-icon {
+  justify-self: center;
+  width: 50%;
+  height: 50%;
+}
+.skills-title-container {
+  width: 100%;
+  height: 100%;
+  grid-row: 1/2;
+  grid-column: 4/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.skills-title {
+  color: white;
+  font-family: chalk;
+  font-size: 1.4rem;
+}
+.biography-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   grid-row: 1/11;
   grid-column: 1/7;
-  opacity: 50%;
-  position: relative;
-  z-index: 1;
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--column);
+  grid-template-rows: var(--row);
+  z-index:999;
+}
+.bio-border {
+  width: 85%;
+  max-height: 95%;
+  grid-column: 3/9;
+  grid-row: 1/6;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15% 0 15% 0;
+}
+.bio-title {
+  font-size: 2rem;
+  color: white;
+  font-family: wilds;
+  text-align: center;
+  margin: 0;
+}
+.bio-location {
+  font-size: 1rem;
+  color: white;
+  font-family: wilds;
+  text-align: center;
+}
+.bio-text {
+  width: 95%;
+  font-size: 1rem;
+  color: white;
+  font-family: wilds;
+  text-align: center;
+  text-indent: 3px;
+  letter-spacing: 1px;
+  margin: 0;
 }
 .test-4 {
   position: absolute;
