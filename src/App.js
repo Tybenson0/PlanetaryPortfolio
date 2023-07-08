@@ -16,8 +16,10 @@ function App() {
   
   return (
     <>
+    <Url />
     <section className='level-0-container'>
       <div className='space'  ></div>
+      
     <Nav />
     <Planets />
     <Routes>
