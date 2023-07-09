@@ -16,6 +16,14 @@
     
   }
 }
+@keyframes ratfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes second-orbit{
   0% {
     transform: translate(-125vw, 25vh);

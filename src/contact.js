@@ -5,8 +5,8 @@ const contact = () => {
         <div className='contact-container'>
             <div className='contact-form-container'>
                 <div className='clip-board-head'>
-                <a href="https://github.com/Tybenson0" target='_blank' rel="noreferrer"><img className='contact-link' src='github.svg' alt='github'></img></a>
                 <a href="https://linkedin.com/in/ty-benson-dev" target='_blank' rel="noreferrer"><img className='contact-link' src='linkedin.svg' alt='linkedin'></img></a>
+                <a href="https://github.com/Tybenson0" target='_blank' rel="noreferrer"><img className='contact-link' src='github.svg' alt='github'></img></a>
                 <a href="/TB-Dev-Resumee.pdf" target='_blank' rel="noreferrer"><img className='contact-link' src='resume.svg' alt='resume'></img></a>
                 </div>
                 <form

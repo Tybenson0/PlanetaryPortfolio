@@ -135,6 +135,7 @@ const CampSite = () => {
       <div className='esker-container' ><img src='esker.png' alt='esker' className='esker'></img></div>
       <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'>
       </img></div>
+      <img className='rat' src='rat.svg' alt='rat'></img>
       <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
       </div>
     </div>
