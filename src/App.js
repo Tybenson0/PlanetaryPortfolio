@@ -84,19 +84,19 @@ const CampSite = () => {
   return (
     <div className='campsite-container-0'> 
       <div className="tree-container-left">
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-4.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-4.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-2.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
-        <img src='tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-4.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-4.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-2.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
+        <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
       </div>
       
       <ul className='smoke-container'>
@@ -132,11 +132,11 @@ const CampSite = () => {
       <div className='eskers-dialogue-container'>
             <p className='esker-dialogue'>{text}</p>
       </div>
-      <div className='esker-container' ><img src='esker.png' alt='esker' className='esker'></img></div>
-      <div className='ship-container'><img src='ship.webp' alt='ship' className='ship'>
+      <div className='esker-container' ><img src='campsite/esker.png' alt='esker' className='esker'></img></div>
+      <div className='ship-container'><img src='campsite/ship.webp' alt='ship' className='ship'>
       </img></div>
-      <img className='rat' src='rat.svg' alt='rat'></img>
-      <div className="moon-container"><img src="/moon.svg" alt="moon" className='moon'></img>
+      <img className='rat' src='/campsite/rat.svg' alt='rat'></img>
+      <div className="moon-container"><img src="/campsite/moon.svg" alt="moon" className='moon'></img>
       </div>
     </div>
   );
@@ -146,10 +146,11 @@ const CampSite = () => {
 const Planets = () => {
   return (
     <div className='planet-container-0'>
-      <img src='/planet-3.svg' alt='hearth' className='planet-1' ></img>
-      <img src='/planet-1.svg' alt='hearth' className='planet-2' ></img>
-      <img src='/planet-2.svg' alt='hearth' className='planet-3' ></img>
-      <img src='/planet-4.svg' alt='hearth' className='planet-4' ></img>
+      
+      <img src='/planets/planet-3.svg' alt='hearth' className='planet-1' ></img>
+      <img src='/planets/planet-1.svg' alt='hearth' className='planet-2' ></img>
+      <img src='/planets/planet-2.svg' alt='hearth' className='planet-3' ></img>
+      <img src='/planets/planet-4.svg' alt='hearth' className='planet-4' ></img>
     </div>
   );
 };

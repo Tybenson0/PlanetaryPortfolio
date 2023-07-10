@@ -12,7 +12,7 @@
     transform: translate(-125vw, 30vh) ;
   }
   100% {
-    transform: translate(125vw, 5vh) ;
+    transform: translate(125vw, 5vh) rotate(180deg);
     
   }
 }
@@ -26,10 +26,10 @@
 }
 @keyframes second-orbit{
   0% {
-    transform: translate(-125vw, 25vh);
+    transform: translate(-125vw, 25vh) ;
   }
   100% {
-    transform: translate(125vw, 0vh);
+    transform: translate(125vw, 0vh) rotate(180deg);
   }
 }
 @keyframes third-orbit{
@@ -45,7 +45,7 @@
     transform: translate(-125vw, 10vh);
   }
   100% {
-    transform: translate(125vw, -10vh);
+    transform: translate(125vw, -10vh) rotate(180deg);
   }
 
   }

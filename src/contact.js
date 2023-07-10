@@ -5,9 +5,15 @@ const contact = () => {
         <div className='contact-container'>
             <div className='contact-form-container'>
                 <div className='clip-board-head'>
-                <a href="https://linkedin.com/in/ty-benson-dev" target='_blank' rel="noreferrer"><img className='contact-link' src='linkedin.svg' alt='linkedin'></img></a>
-                <a href="https://github.com/Tybenson0" target='_blank' rel="noreferrer"><img className='contact-link' src='github.svg' alt='github'></img></a>
-                <a href="/TB-Dev-Resumee.pdf" target='_blank' rel="noreferrer"><img className='contact-link' src='resume.svg' alt='resume'></img></a>
+                <a href="/TB-Dev-Resumee.pdf " target='_blank' rel="noreferrer"><svg className='contact-link'>
+        <use  href="icons/icons.svg#resume" />
+      </svg></a>
+                <a href="https://github.com/Tybenson0" target='_blank' rel="noreferrer"><svg className='contact-link'>
+        <use href="/icons/icons.svg#github" />
+      </svg></a>
+                <a href="https://linkedin.com/in/ty-benson-dev " target='_blank' rel="noreferrer"><svg className='contact-link'>
+        <use href="/icons/icons.svg#linkedin" />
+      </svg></a>
                 </div>
                 <form
             class="clip-board-body"
