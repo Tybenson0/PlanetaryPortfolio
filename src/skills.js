@@ -47,9 +47,7 @@ const Skills = () => {
       <svg className='skills-icon'>
         <use href="/icons/icons.svg#wix" />
       </svg>
-      <svg className='skills-icon'>
-        <use href="/icons/icons.svg#node" />
-      </svg>
+      <img src='./icons/redux.svg' alt='redux' className='skills-icon'></img>
         </div>
       </SwiperSlide>
       <SwiperSlide className='skills-slide'>

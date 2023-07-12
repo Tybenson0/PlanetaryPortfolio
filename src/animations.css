@@ -80,15 +80,7 @@
     }
   }
   
-  @keyframes shake {
-    0%,
-    100% {
-      transform: skewX(0) scale(1);
-    }
-    50% {
-      transform: skewX(5deg) scale(0.9);
-    }
-  }
+
   
   @keyframes particleUp {
     0% {
