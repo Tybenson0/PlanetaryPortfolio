@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import { selectString, } from './app/esker';
 import CampSite from './campsite.js'
+import AudioPlayer from './audioplayer.js'
+import song from "./hearth.mp3";
 import './App.css';
 import Home from './home';
 import Projects from './projects';
@@ -28,6 +30,7 @@ function App() {
       <Route path='biography' element={<Biography />}></Route>
       <Route path='contact' element={<Contact />}></Route>
     </Routes>
+    <AudioPlayer audioSrc={song}/>
       <CampSite />
     </section>
     </>
