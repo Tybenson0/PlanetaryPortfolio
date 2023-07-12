@@ -1,5 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
+
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { selectString, } from './app/esker';
+import { AnimatePresence } from 'framer-motion';
 import CampSite from './campsite.js'
 import AudioPlayer from './audioplayer.js'
 import song from "./hearth.mp3";
@@ -13,7 +15,7 @@ import Nav from './nav.js';
 import './normalizequantum.css';
 import './App.css';
 function App() {
-  
+ const location = useLocation();
  
   return (
     <>
@@ -23,13 +25,15 @@ function App() {
       
     <Nav />
     <Planets />
-    <Routes>
-      <Route path='/' element={<Home />}></Route>
-      <Route path='projects' element={<Projects />}></Route>
-      <Route path='skills' element={<Skills />}></Route>
-      <Route path='biography' element={<Biography />}></Route>
-      <Route path='contact' element={<Contact />}></Route>
+      <AnimatePresence mode='wait'>
+    <Routes key={location.pathname} location={location}>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='projects' element={<Projects />}></Route>
+        <Route path='skills' element={<Skills />}></Route>
+        <Route path='biography' element={<Biography />}></Route>
+        <Route path='contact' element={<Contact />}></Route>
     </Routes>
+      </AnimatePresence>
     <AudioPlayer audioSrc={song}/>
       <CampSite />
     </section>

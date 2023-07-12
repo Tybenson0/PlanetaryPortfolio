@@ -16,6 +16,11 @@
   src: url(/public/fonts/EraserRegular.woff);
 }
 
+.motion {
+  width: 100%;
+  height: 100%;
+}
+
 :root {
   --primary-color: #E57A1B; /* Replace with your desired color value */
   --column: repeat(8, 1fr);

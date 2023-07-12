@@ -1,8 +1,14 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 const contact = () => {
     return (
-        <div className='contact-container'>
+        <motion.div 
+        initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
+        className='contact-container'>
             <div className='contact-form-container'>
                 <div className='clip-board-head'>
                 <a href="/TB-Dev-Resumee.pdf " target='_blank' rel="noreferrer"><svg className='contact-link'>
@@ -59,7 +65,7 @@ const contact = () => {
             
           </form>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
