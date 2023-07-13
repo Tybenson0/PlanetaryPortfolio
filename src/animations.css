@@ -12,16 +12,24 @@
     transform: translate(-125vw, 30vh) ;
   }
   100% {
-    transform: translate(125vw, 5vh) ;
+    transform: translate(125vw, 5vh) rotate(180deg);
     
+  }
+}
+@keyframes ratfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes second-orbit{
   0% {
-    transform: translate(-125vw, 25vh);
+    transform: translate(-125vw, 25vh) ;
   }
   100% {
-    transform: translate(125vw, 0vh);
+    transform: translate(125vw, 0vh) rotate(180deg);
   }
 }
 @keyframes third-orbit{
@@ -37,7 +45,7 @@
     transform: translate(-125vw, 10vh);
   }
   100% {
-    transform: translate(125vw, -10vh);
+    transform: translate(125vw, -10vh) rotate(180deg);
   }
 
   }
@@ -72,15 +80,7 @@
     }
   }
   
-  @keyframes shake {
-    0%,
-    100% {
-      transform: skewX(0) scale(1);
-    }
-    50% {
-      transform: skewX(5deg) scale(0.9);
-    }
-  }
+
   
   @keyframes particleUp {
     0% {

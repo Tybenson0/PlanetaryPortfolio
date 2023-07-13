@@ -1,6 +1,6 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import { Pagination, Scrollbar, A11y } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -10,7 +10,12 @@ import 'swiper/css/effect-fade';
 
 const Skills = () => {
     return (
-        <div className='skills-container'>
+        <motion.div 
+        initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
+        className='skills-container'>
             <div className='skills-title-container'>
                 <h1 className='skills-title'>Skills & Technologies</h1>
                 <span class="chalk-line"></span>
@@ -26,42 +31,61 @@ const Skills = () => {
     >
       <SwiperSlide className='skills-slide'>
         <div className='skills-grid'>
-        <img className='skills-icon' src='skills/svelte.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/sass.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/css.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/figma.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/html.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/ts.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/js.svg' alt='github'></img>
-        <img className='skills-icon' src='skills/node.svg' alt='github'></img>
+        <svg className='skills-icon'>
+        <use href="/icons/icons.svg#svelte" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#html" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#css" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#sass" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#js" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#angular" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#wix" />
+      </svg>
+      <img src='./icons/redux.svg' alt='redux' className='skills-icon'></img>
         </div>
       </SwiperSlide>
       <SwiperSlide className='skills-slide'>
         <div className='skills-grid'>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
+        <svg className='skills-icon'>
+        <use href="/icons/icons.svg#npm" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#php" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#figma" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#adobe-p" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#adobe-i" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#affect" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#engine" />
+      </svg>
+      <svg className='skills-icon'>
+        <use href="/icons/icons.svg#git" />
+      </svg>
         </div>
       </SwiperSlide>
-      <SwiperSlide className='skills-slide'>
-        <div className='skills-grid'>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        <img className='skills-icon' src='github.svg' alt='github'></img>
-        </div>
-      </SwiperSlide>
+      
     </Swiper>
-        </div>
+  </motion.div>
     );
 };
 

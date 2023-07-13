@@ -1,8 +1,14 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 const Biography = () => {
     return (
-        <div className='biography-container'>
+        <motion.div 
+        initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
+        className='biography-container'>
             <div className='bio-border'>
                 <h1 className='bio-title'>Hi, my name is Ty!</h1>
                 <h2 className='bio-location'>Santa Clarita, CA, 91355</h2>
@@ -20,7 +26,7 @@ const Biography = () => {
                  with the latest web development trends. Let's build exceptional digital solutions together!
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
