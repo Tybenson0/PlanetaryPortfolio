@@ -75,10 +75,10 @@ const Projects = () => {
                                 <span class="chalk-line"></span>
             
                                 <div className='projects-link-container'>
-                                <a href="https://socaltubspecialist.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
+                                <a href="https://moshifiedmockapp.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
                                     <use href="/icons/icons.svg#link" />
                                 </svg></a>
-                                                <a href="https://github.com/Tybenson0/socaltubs" target='_blank' rel='noreferrer'><svg className='project-link'>
+                                                <a href="https://github.com/Tybenson0/Mock-app" target='_blank' rel='noreferrer'><svg className='project-link'>
                                     <use href="/icons/icons.svg#code" />
                                 </svg></a>
                                 </div>
@@ -87,10 +87,10 @@ const Projects = () => {
                                 <h1 className='project-title'>ItsNittyGritty</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                    <a href=" https://aimeeokifoundation.com/" target='_blank' rel='noreferrer'><svg className='project-link'>
+                                    <a href=" https://remember-test.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
                                     <use href="/icons/icons.svg#link" />
                                 </svg></a>
-                                                <a href="https://github.com/Tybenson0/AimeeOki " target='_blank' rel='noreferrer'><svg className='project-link'>
+                                                <a href="https://github.com/Tybenson0/RememberIt" target='_blank' rel='noreferrer'><svg className='project-link'>
                                     <use href="/icons/icons.svg#code" />
                                 </svg></a>
                                 </div>

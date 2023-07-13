@@ -22,10 +22,12 @@ const contact = () => {
       </svg></a>
                 </div>
                 <form
+                name='contact'
             class="clip-board-body"
-            action="https://formspree.io/f/mpzbkyby"
+            action="/contact"
             method="POST"
           >
+            <input type='hidden' name='form-name' value='contact'></input>
             <label class="form-name">
             Your Name:
             </label>
@@ -34,35 +36,38 @@ const contact = () => {
                 name="name"
                 placeholder="luke skywalker..."
                 class="name-input"
+                required
               />
             <label class="form-email">
             Your Email:
             </label>
               <input
-                type="name"
-                name="name"
+                type="email"
+                name="email"
                 placeholder="blabla@gmail.com"
                 class="email-input"
+                required
               />
             <label class="form-phone">
             Phone #:
             </label>
               <input
-                type="name"
-                name="name"
+                type="phone"
+                name="phone"
                 placeholder="661-***-****"
                 class="phone-input"
+                required
               />
               <input
-                type="name"
-                name="name"
+                type="subject"
+                name="subject"
                 placeholder="Subject..."
                 class="subject-input"
               />
-              <textarea className='form-text' name="text" placeholder='Your Message...'>
+              <textarea className='form-text' name="message" placeholder='Your Message...' required>
                
               </textarea>
-            
+              <button type='submit' name='submit' className='submit-button'>Submit</button>
           </form>
             </div>
         </motion.div>
