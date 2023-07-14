@@ -56,7 +56,6 @@ const contact = () => {
                 name="phone"
                 placeholder="661-***-****"
                 class="phone-input"
-                required
               />
               <input
                 type="subject"

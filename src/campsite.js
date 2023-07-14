@@ -61,16 +61,7 @@ const CampSite = () => {
           <img src='campsite/tree-1.svg' alt='pine tree' className='tree'></img>
         </div>
         
-        <ul className='smoke-container'>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-          <li className='smoke'></li>
-        </ul>
+        
         <div className='campfire-container'>
         <div class="fire">
         <div class="fire-left">

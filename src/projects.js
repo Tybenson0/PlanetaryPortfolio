@@ -84,7 +84,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title'>ItsNittyGritty</h1>
+                                <h1 className='project-title'>RememberThat</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
                                     <a href=" https://remember-test.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
