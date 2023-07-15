@@ -32,6 +32,7 @@
 }
 html {
    background-color: #000000; 
+   overflow: hidden;
 }
 a {
   text-decoration: none;
