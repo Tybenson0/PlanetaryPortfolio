@@ -1,6 +1,5 @@
 
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { selectString, } from './app/esker';
 import { AnimatePresence } from 'framer-motion';
 import CampSite from './campsite.js'
 import AudioPlayer from './audioplayer.js'
@@ -19,7 +18,6 @@ function App() {
  
   return (
     <>
-    <Url />
     <section className='level-0-container'>
       <div className='space'  ></div>
       
