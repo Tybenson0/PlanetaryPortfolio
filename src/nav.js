@@ -8,7 +8,7 @@ const Nav = () => {
         const handlePageLoad = () => {
             setTimeout(() => {
               dispatch(selectString(0)); // Dispatch the selectString action after a delay
-            }, 1000); // Delay for 2 seconds (adjust as needed)
+            }, 3000); // Delay for 2 seconds (adjust as needed)
           };
     
         window.onload = handlePageLoad;
