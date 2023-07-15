@@ -2,7 +2,6 @@
   #root {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
   }
   .level-0-container {
     position: relative;
@@ -11,7 +10,8 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    overflow:hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .space {
     width: 250%;
@@ -578,7 +578,6 @@
     position: relative;
     z-index: 4;
     align-items: stretch;
-    overflow: hidden;
   }
   .moon {
     width: 175%;
@@ -840,7 +839,6 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    overflow: hidden;
     
   }
   .rat {
