@@ -42,9 +42,11 @@ a {
   border-bottom: 2px solid white;
   background-color: white;
   opacity: 40%;
+  
 }
 
 html, body, {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
