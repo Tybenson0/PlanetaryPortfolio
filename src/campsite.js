@@ -10,7 +10,7 @@ const CampSite = () => {
       let typingEffectInterval;
     
       // Set a delay of 2000 milliseconds (2 seconds)
-      const delay = 500;
+      const delay = 0;
     
       // Function to start the typing effect
       const startTypingEffect = () => {
