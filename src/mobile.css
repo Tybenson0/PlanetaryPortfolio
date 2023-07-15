@@ -6,7 +6,7 @@
   .level-0-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 120%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -16,7 +16,7 @@
     width: 250%;
     height: 200%;
     border-radius: 100%;
-    position: relative;
+    position: fixed;
     top: -50%;
     left: 0;
     content: "";
