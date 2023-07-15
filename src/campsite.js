@@ -22,7 +22,7 @@ const CampSite = () => {
           } else {
             clearInterval(typingEffectInterval);
           }
-        }, 70);
+        }, 30);
       };
     
       // Cancel the previous typing effect and start a new one

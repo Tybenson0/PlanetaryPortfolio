@@ -31,7 +31,8 @@
   --row: repeat(8, 1fr);
 }
 html {
-   background-color: #000000; 
+   background-color: #000000;
+   overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -45,8 +46,8 @@ a {
   
 }
 
-html, body, {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+body {
+  width: 100%;
+  height: 100%;
+
 }
