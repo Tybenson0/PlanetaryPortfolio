@@ -10,7 +10,7 @@ export const eskerSlice = createSlice({
       'we made it to the end of the system, thank you for joining me on this jounrney and I hope to see you again Traveler!',
       'home sweet home'
     ],
-    selectedString: 'Woah, how did you get here?.... no worries, my name is Esker. Welcome to the Planetary Portfolio ',
+    selectedString: 'Hello, my name is Ekser and Welcome to the PLANETARY PORTFOLIO!',
     display: false,
   },
   reducers: {
