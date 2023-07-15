@@ -568,7 +568,7 @@
   
   /* code below is for the campsite */
   .campsite-container-0 {
-    height: 100%;
+    height: 120%;
     width: 100%;
     grid-row: 1/11;
     grid-column: 1/7;
@@ -578,6 +578,8 @@
     position: relative;
     z-index: 4;
     align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .moon {
     width: 175%;
