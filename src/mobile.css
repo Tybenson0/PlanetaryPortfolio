@@ -578,8 +578,7 @@
     position: relative;
     z-index: 4;
     align-items: stretch;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
   }
   .moon {
     width: 175%;
