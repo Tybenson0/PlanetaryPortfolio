@@ -1,5 +1,4 @@
-import React from 'react';
-import {motion} from 'framer-motion';
+import React, { useState, useEffect } from 'react';import {motion} from 'framer-motion';
 import { Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,12 +8,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 const Skills = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay of 1 second for demonstration purposes
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
     return (
         <motion.div 
-        initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity: .01}}
-    transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+      animate={isLoading ? {} : { opacity: 1 }}
+      exit={{ opacity: 0.01 }}
+      transition={{ duration: 0.5 }}
         className='skills-container'>
             <div className='skills-title-container'>
                 <h1 className='skills-title'>Skills & Technologies</h1>

@@ -43,13 +43,13 @@
   .nav-container-0 {
     grid-column: 1/2;
     grid-row: 1/4;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
     width: fit-content;
     height: fit-content;
     position: absolute;
     z-index: 9999;
-    margin-left: 2rem;
+    margin: 2rem 0 0 2rem;
   }
   
   .nav-ul {
@@ -57,7 +57,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.6rem;
     margin: 0;
     list-style: none;
   }
@@ -391,6 +391,7 @@
     background: transparent;
     color: white;
     border-radius: 0;
+    padding-bottom: 3px;
   }
   .form-email {
     width: 100%;
@@ -416,6 +417,7 @@
     background: transparent;
     color: white;
     border-radius: 0;
+    padding-bottom: 3px;
   }
   .form-phone {
     width: 100%;
@@ -441,6 +443,7 @@
     background: transparent;
     color: white;
     border-radius: 0;
+    padding-bottom: 3px;
   }
   
   .subject-input {
