@@ -568,7 +568,7 @@
   
   /* code below is for the campsite */
   .campsite-container-0 {
-    height: 120%;
+    height: 100%;
     width: 100%;
     grid-row: 1/11;
     grid-column: 1/7;
