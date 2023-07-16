@@ -8,7 +8,7 @@ const Nav = () => {
     const handleLinkClick = (index) => {
         setTimeout(() => {
           dispatch(selectString(index));
-        }, 3000); // Delay for 1 second (adjust as needed)
+        }, 0); // Delay for 1 second (adjust as needed)
       };
     return (
         <div className='nav-container-0'>

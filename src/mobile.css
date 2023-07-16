@@ -19,17 +19,15 @@
     
   }
   .space {
-    width: 250%;
-    height: 200%;
-    border-radius: 100%;
-    position: absolute;
-    top: -50%;
-    left: 0;
+    width: 150%;
+    height: 125%;
+    border-radius: 50%;
+    position: fixed;
     content: "";
+    top: -25%;
     background-image: url('/public/stars/Stars-bg-mobile.svg'); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 50%;
     animation: Universe-Rotation 330s infinite linear;
     z-index: -1;
   }

@@ -2,7 +2,7 @@
 <g transform="translate(540,960) scale(1,1) translate(-540,-960)"><defs>
 
 </defs>
-<rect x="0" y="0" width="1080" height="1920" fill="url(#lg-0.464537953281124)"></rect><circle cx="362.70652759148214" cy="1656.0594833997816" r="0.7705698965613238" fill="#ffffff" fill-opacity="0.22372211715635237">
+<rect x="0" y="0" width="500" height="920" fill="url(#lg-0.464537953281124)"></rect><circle cx="362.70652759148214" cy="1656.0594833997816" r="0.7705698965613238" fill="#ffffff" fill-opacity="0.22372211715635237">
   <animate attributeName="r" dur="50s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1" begin="0s" values="0.7705698965613238;0.3852849482806619;1.001740865529721;0.7705698965613238"></animate>
 </circle><circle cx="978.4933194729991" cy="248.24471040286696" r="1.1896184184660281" fill="#ffffff" fill-opacity="0.8836352919986561">
   <animate attributeName="r" dur="50s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.8 1;0.2 0 0.8 1;0.2 0 0.8 1" begin="-0.07142857142857142s" values="1.1896184184660281;0.5948092092330141;1.5465039440058366;1.1896184184660281"></animate>
