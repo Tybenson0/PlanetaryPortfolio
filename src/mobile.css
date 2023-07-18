@@ -344,6 +344,7 @@
     align-items: center;
     justify-content: space-around;
     position: absolute;
+    padding: 5px 0 5px 0;
   }
   .contact-link {
     width: 2.5rem;
@@ -536,9 +537,9 @@
   }
   .planet-1 {
     width: 100%;
-    height: 125%;
+    height: 100%;
     grid-row: 4/7;
-    grid-column: 1/5;
+    grid-column: 1/7;
     position: absolute;
     z-index: 10;
     transform-origin: 50% 50%;
