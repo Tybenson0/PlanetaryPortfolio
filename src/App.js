@@ -4,7 +4,6 @@ import { AnimatePresence } from 'framer-motion';
 import CampSite from './campsite.js'
 import AudioPlayer from './audioplayer.js'
 import song from "./hearth.mp3";
-import './App.css';
 import Home from './home';
 import Projects from './projects';
 import Skills from './skills';
@@ -15,6 +14,8 @@ import './normalizequantum.css';
 import './App.css';
 function App() {
  const location = useLocation();
+
+ 
  
   return (
     <>

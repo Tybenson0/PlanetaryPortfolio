@@ -34,6 +34,9 @@ html {
    background-color: #000000;
    overflow-x: hidden;
 }
+.inital-fade {
+  animation: initial-fade 2s linear forwards;
+}
 a {
   text-decoration: none;
 }
