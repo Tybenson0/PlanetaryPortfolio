@@ -7,6 +7,25 @@
     }
 }
 
+@keyframes music {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.10);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes note-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .initial-fade {
   0% {
     opacity: 0;
@@ -28,7 +47,7 @@
 
 @keyframes ratfade {
   0% {
-    opacity: 1;
+    opacity: .7;
   }
   100% {
     opacity: 0;
@@ -47,7 +66,7 @@
     transform: translate(-125vw, 15vh) rotate(90deg);
   }
   100% {
-    transform: translate(125vw, -5vh) rotate(180deg);
+    transform: translate(125vw, -5vh) rotate(220deg);
   }
 }
 @keyframes fourth-orbit{
@@ -66,7 +85,7 @@
         transform: scalex(-1) rotate(-25deg);
     }
     50% {
-      transform: scalex(-1) rotate(-21deg);
+      transform: scalex(-1) rotate(-19deg);
     }
     100% {
         transform: scalex(-1) rotate(-25deg);

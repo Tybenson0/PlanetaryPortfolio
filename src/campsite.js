@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { useSelector} from 'react-redux';
 import {motion} from 'framer-motion'
 const CampSite = () => {
-    const {selectedString } = useSelector(state => state.esker);
+    const {selectedString, display } = useSelector(state => state.esker);
     
     const [isLoading, setIsLoading] = useState(true);
 
@@ -46,6 +46,7 @@ const CampSite = () => {
       </div>
       <div class="logs"></div>
         </motion.div>
+        <img src='campsite/music.svg' alt='music note' className={`music-note ${display ? 'note-fade' : ''}`}></img>
         <div className='eskers-dialogue-container'>
               <motion.p 
               key={selectedString}

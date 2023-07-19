@@ -24,17 +24,19 @@ const Biography = () => {
                 <h2 className='bio-location'>Santa Clarita, CA, 91355</h2>
                 <span class="chalk-line"></span>
                 <p className='bio-text'>
-                Hi, I'm Ty, a passionate web developer dedicated to crafting captivating online experiences.
-                 With a strong command of HTML, CSS, and JavaScript, I specialize in creating responsive and 
-                 user-friendly websites. I thrive on solving complex coding challenges and staying up to date 
-                 with the latest web development trends. Let's build exceptional digital solutions together!
+                Hello, y'all! Hi i'm Ty, a laid-back web developer residing in the countryside  
+                of Santa Clarita, California. I find solace and inspiration in the great outdoors, where I frequently 
+                go on hikes taking in the scenery. When not exploring, 
+                you'll find me playing games with my friends, watching my favorite shows, or getting my 
+                hands dirty with cars.
                 </p>
                 <p className='bio-text'>
-                Hi, I'm Ty, a passionate web developer dedicated to crafting captivating online experiences.
-                 With a strong command of HTML, CSS, and JavaScript, I specialize in creating responsive and 
-                 user-friendly websites. I thrive on solving complex coding challenges and staying up to date 
-                 with the latest web development trends. Let's build exceptional digital solutions together!
+                For the past two years, I've been waist deep in the world of web development, and the incredible technology it brings to light. 
+                 Tech is always changing, so I stay up to date ensuring that my work remains
+                 innovative and cutting-edge. I'm excited to make a lasting impact in the web world through my abilities.
+                  I hope you enjoyed your stay in my little pocket universe, hopefully it brought some joy to your day! 
                 </p>
+                <p className='bio-text'>Thank you.</p>
             </div>
         </motion.div>
     );

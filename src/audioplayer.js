@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import {useDispatch} from 'react-redux';
+import { toggle } from './app/esker';
 
 import {motion} from 'framer-motion'
 const AudioPlayer = ({ audioSrc }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
     const fadeDuration = 1.5; // Duration for fade-in and fade-out in seconds
+    const dispatch = useDispatch();
   
     const fadeInAudio = () => {
       const audioElement = audioRef.current;
@@ -69,7 +72,7 @@ const AudioPlayer = ({ audioSrc }) => {
       exit={{opacity: 1}}
       transition={{ duration: 1 }}
       className='sound-container'>
-        <button onClick={toggleAudio} className='music-button'>
+        <button onClick={() => { dispatch(toggle()); toggleAudio(); }} className='music-button'>
           {isPlaying ? (
             <img src="./campsite/on.svg" alt="Pause" className='music' />
           ) : (
