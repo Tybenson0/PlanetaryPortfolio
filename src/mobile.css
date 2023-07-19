@@ -23,7 +23,7 @@
     width: 125%;
     height: 125%;
     border-radius: 50%;
-    position: absolute;
+    position: sticky;
     content: "";
     top: -25%;
     background-image: url('/public/stars/Stars-bg-mobile.svg'); 
