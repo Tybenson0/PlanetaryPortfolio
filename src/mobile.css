@@ -23,7 +23,7 @@
     width: 125%;
     height: 125%;
     border-radius: 50%;
-    position: sticky;
+    position: absolute;
     content: "";
     top: -25%;
     background-image: url('/public/stars/Stars-bg-mobile.svg'); 
@@ -502,13 +502,11 @@
     z-index: 5;
     padding: 5px 0 5px 5px;
     border-radius: 5px;
-    overflow: hidden;
   }
   .esker-dialogue {
     font-family: space-mono-regular;
-    max-width: 100%;
+    width: 100%;
     height: fit-content;
-    max-height: 10vh;
     font-size: 1.4rem;
     line-height: 1.4rem;
     color: #fff;
