@@ -487,14 +487,15 @@
   }
   
   .eskers-dialogue-container {
-    max-width: 85%;
+    width: 90%;
     height: fit-content;
-    grid-row: 6/8;
-    grid-column: 1/4;
+    grid-row: 6/9;
+    grid-column: 1/5;
     justify-self: end;
     align-self: center;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
     z-index: 5;
     padding: 5px 0 5px 5px;
@@ -503,10 +504,11 @@
   }
   .esker-dialogue {
     font-family: space-mono-regular;
-    max-width: 100%;
+    width: 90%;
     height: fit-content;
+    text-align: center;
     font-size: 1.8rem;
-    line-height: 2rem;
+    line-height: 3rem;
     color: #fff;
     white-space: normal;
     padding-right: 10px;

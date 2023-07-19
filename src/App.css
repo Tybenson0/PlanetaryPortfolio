@@ -34,6 +34,9 @@ html {
    background-color: #000000;
    overflow-x: hidden;
 }
+h1, h1, h3 {
+  cursor: pointer;
+}
 .inital-fade {
   animation: initial-fade 2s linear forwards;
 }

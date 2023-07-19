@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Pagination, Scrollbar, A11y } from 'swiper/modules';
-
+import {useDispatch} from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {motion} from 'framer-motion';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import { selectString } from './app/esker';
 
 const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +18,8 @@ const Projects = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const dispatch = useDispatch();
     return (
             <motion.div 
             initial={{ opacity: 0 }}
@@ -37,7 +40,7 @@ const Projects = () => {
                         <div className='projects-flex'>
                             <div className='project-container'>
                                 <button>
-                                    <h1 className='project-title'>SoCalTubSpecialist</h1>
+                                    <h1 className='project-title' onClick={() => dispatch(selectString(1))}>SoCalTubSpecialist</h1>
                                 </button>
                                 <span class="chalk-line"></span>
             
@@ -51,7 +54,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title'>AimeeOkiFoundation</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(2))}>AimeeOkiFoundation</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
                                     <a href=" https://aimeeokifoundation.com/" target='_blank' rel='noreferrer'><svg className='project-link'>
@@ -63,7 +66,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title'>TyTheCodeGuy</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(3))}>TyTheCodeGuy</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
                                     <a href="https://tythecodeguy.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
@@ -80,7 +83,7 @@ const Projects = () => {
             <div className='projects-flex'>
                             <div className='project-container'>
                                 <button>
-                                    <h1 className='project-title'>Moshified</h1>
+                                    <h1 className='project-title' onClick={() => dispatch(selectString(4))}>Moshified</h1>
                                 </button>
                                 <span class="chalk-line"></span>
             
@@ -94,7 +97,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title'>RememberThat</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(5))}>RememberThat</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
                                     <a href=" https://remember-test.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
