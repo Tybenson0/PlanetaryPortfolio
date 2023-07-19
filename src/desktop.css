@@ -573,6 +573,7 @@
   /* code below is for the campsite */
   .campsite-container-0 {
     height: 100%;
+    max-height: 1000px;
     width: 100%;
     max-width: 1500px;
     grid-row: 1/11;
