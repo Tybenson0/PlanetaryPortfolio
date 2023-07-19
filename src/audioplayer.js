@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-
+import {motion} from 'framer-motion'
 const AudioPlayer = ({ audioSrc }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null);
@@ -22,6 +22,17 @@ const AudioPlayer = ({ audioSrc }) => {
         }
       }, fadeDuration * 10);
     };
+
+    const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay of 1 second for demonstration purposes
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   
     const fadeOutAudio = () => {
       const audioElement = audioRef.current;
@@ -52,7 +63,12 @@ const AudioPlayer = ({ audioSrc }) => {
     };
   
     return (
-      <div className='sound-container'>
+      <motion.div 
+      initial={{ opacity: 0 }}
+      animate={isLoading ? {} : { opacity: 1 }}
+      exit={{opacity: 1}}
+      transition={{ duration: 1 }}
+      className='sound-container'>
         <button onClick={toggleAudio} className='music-button'>
           {isPlaying ? (
             <img src="./campsite/on.svg" alt="Pause" className='music' />
@@ -61,7 +77,7 @@ const AudioPlayer = ({ audioSrc }) => {
           )}
         </button>
         <audio ref={audioRef} src={audioSrc} />
-      </div>
+      </motion.div>
     );
   };
 

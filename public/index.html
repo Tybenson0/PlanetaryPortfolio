@@ -29,7 +29,15 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      data-netlify-honeypot="bot-field"
+      data-netlify="true"
+      netlify="no-success-page"
+      name="contact"
+      action="."
+      method="POST"
+      hidden
+    >
       <input type="name" name="name" />
 
       <input type="email" name="email" />

@@ -39,7 +39,7 @@ const Contact = () => {
             </svg>
           </a>
         </div>
-        <form name='contact' className='clip-board-body' action='/contact' method='POST'>
+        <form data-netlify-honeypot="bot-field" data-netlify='true' netlify='no-success-page' name='contact' className='clip-board-body' action='.' method='POST'>
           <input type='hidden' name='form-name' value='contact' />
           <label className='form-name'>Your Name:</label>
           <input

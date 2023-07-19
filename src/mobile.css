@@ -1,3 +1,4 @@
+
 @media (max-width: 550px)  {
   html {
     
@@ -19,10 +20,10 @@
     
   }
   .space {
-    width: 150%;
+    width: 125%;
     height: 125%;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     content: "";
     top: -25%;
     background-image: url('/public/stars/Stars-bg-mobile.svg'); 
@@ -30,12 +31,6 @@
     background-size: cover;
     animation: Universe-Rotation 330s infinite linear;
     z-index: -1;
-  }
-  .speed-up {
-    animation-duration: 5s;
-  }
-  .slow-down {
-    animation-duration: 360s;
   }
   /* code below is for navbar */
   .nav-container-0 {

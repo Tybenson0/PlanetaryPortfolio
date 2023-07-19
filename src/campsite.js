@@ -50,14 +50,14 @@ const CampSite = () => {
               <motion.p 
               key={selectedString}
               initial={{ opacity: 0 }}
-              animate={ { opacity: 1 }}
-              exit={{opacity: 1}}
-              transition={{ duration: 1, delay: 2 }}
+              animate={isLoading ? {} : { opacity: 1 }}
+              exit={{opacity: 0}}
+              transition={{ duration: 1, delay: 1 }}
               className="esker-dialogue">{selectedString}</motion.p>
         </div>
         <motion.div 
         initial={{ opacity: 0 }}
-        animate={isLoading ? {} : { opacity: 3 }}
+        animate={isLoading ? {} : { opacity: 1 }}
         exit={{ opacity: 0.01 }}
         transition={{ duration: 2 }}
         className='esker-container' ><img src='campsite/esker.png' alt='esker' className='esker'></img></motion.div>
