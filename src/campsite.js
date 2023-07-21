@@ -51,12 +51,14 @@ const CampSite = () => {
         </motion.div>
         <div class="note-container"><img src='campsite/music.svg' alt='music note' className={`music-note ${display ? 'note-fade' : ''}`}></img></div>
         <div className='eskers-dialogue-container'>
-              <motion.p 
-              key={selectedString}
-              initial={{ opacity: 0 }}
-              animate={isLoading ? {} : { opacity: 1, transition: 1 }}
-              exit={{ opacity: 0 }}
-              className="esker-dialogue">{selectedString}</motion.p>
+        <motion.p 
+      key={selectedString}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition:  { duration: 1 } }} 
+      exit={{ opacity: 0 }}
+      className="esker-dialogue"
+    >
+                {selectedString}</motion.p>
         </div>
         <motion.div 
         initial={{ opacity: 0 }}
