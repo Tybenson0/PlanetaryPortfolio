@@ -235,6 +235,7 @@
     width: 50%;
     height: 50%;
     justify-self: center;
+    cursor: pointer;
   }
   .skills-title-container {
     width: 100%;
@@ -815,6 +816,7 @@
     rotate: -20deg;
     z-index: 999;
     opacity: .7;
+    cursor: pointer;
   }
   .rat:hover {
     animation: ratfade .6s forwards}

@@ -240,6 +240,7 @@
     width: 50%;
     height: 50%;
     justify-self: center;
+    cursor: pointer;
   }
   .skills-title-container {
     width: 100%;
