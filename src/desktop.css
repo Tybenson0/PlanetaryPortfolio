@@ -678,6 +678,7 @@
     width: 10rem;
     height: 10rem;
     filter: brightness(25%);
+    cursor: pointer;
   }
   .ship-container {
     width: 100%;
@@ -697,6 +698,7 @@
     width: 7rem;
     height: 7rem;
     position: absolute;
+    cursor: pointer;
   }
   .sound-container {
     width: 100%;
