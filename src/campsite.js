@@ -92,7 +92,12 @@ const CampSite = () => {
         </motion.div>
           
           
-        <img className='rat' src='/campsite/rat.svg' alt='rat' onClick={() => dispatch(selectString(25))}></img>
+        <motion.img 
+        initial={{ opacity: 0 }}
+        animate={isLoading ? {} : { opacity: 1 }}
+        exit={{ opacity: 0.01 }}
+        transition={{ duration: 3 }}
+        className='rat' src='/campsite/rat.svg' alt='rat' onClick={() => dispatch(selectString(25))}></motion.img>
         <motion.div 
         initial={{ opacity: 0 }}
         animate={isLoading ? {} : { opacity: 1 }}

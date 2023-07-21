@@ -58,7 +58,7 @@ const AudioPlayer = ({ audioSrc }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1}}
+      animate={{ opacity: 1, transition: { delay: 2 } }}
       exit={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className='sound-container'
