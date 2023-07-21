@@ -494,7 +494,7 @@
   }
   
   .eskers-dialogue-container {
-    max-width: 75%;
+    max-width: 85%;
     height: fit-content;
     grid-row: 3/4;
     grid-column: 1/7;

@@ -9,7 +9,7 @@ const Nav = () => {
     const handleLinkClick = (index) => {
         setTimeout(() => {
           dispatch(selectString(index));
-        }, 0); // Delay for 1 second (adjust as needed)
+        }, 1250); // Delay for 1 second (adjust as needed)
       };
       const [isLoading, setIsLoading] = useState(true);
 
@@ -17,7 +17,7 @@ const Nav = () => {
     // Simulating a delay of 1 second for demonstration purposes
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,17 +33,17 @@ const Nav = () => {
                     <Link to="projects" className='nav-link' onClick={() => handleLinkClick(0)}>Projects</Link>
                 </li>
                 <li className='nav-li'>
-                    <Link to="skills" className='nav-link' onClick={() => handleLinkClick(1)}>Skills</Link>
+                    <Link to="skills" className='nav-link' onClick={() => handleLinkClick(6)}>Skills</Link>
                 </li>
                 <li className='nav-li'>
-                    <Link to="biography" className='nav-link' onClick={() => handleLinkClick(2)} >Biography</Link>
+                    <Link to="biography" className='nav-link' onClick={() => handleLinkClick(23)} >Biography</Link>
                 </li>
                 <li className='nav-li'>
-                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(3)}>Contact</Link>
+                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(24)}>Contact</Link>
                 </li>
                 <li className='nav-li'>
                     <Link to="/" className='nav-link' 
-                    onClick={() => handleLinkClick(4)}>Home</Link>
+                    onClick={() => handleLinkClick()}>Home</Link>
                 </li>
             </ul>
         </motion.div>

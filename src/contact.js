@@ -39,7 +39,7 @@ const Contact = () => {
             </svg>
           </a>
         </div>
-        <form data-netlify-honeypot="bot-field" data-netlify='true' name='contact' className='clip-board-body' action='/contact' method='POST'>
+        <form data-netlify-honeypot="bot-field" name="contact" method="POST" data-netlify="true" netlify="no-success-page" action='.' className='clip-board-body'>
           <input type='hidden' name='form-name' value='contact' />
           <label className='form-name'>Your Name:</label>
           <input
@@ -75,6 +75,7 @@ const Contact = () => {
             Submit
           </button>
         </form>
+        
       </div>
     </motion.div>
   );

@@ -108,6 +108,16 @@ const Projects = () => {
                                 </svg></a>
                                 </div>
                             </div>
+                            <div className='project-container'>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(5))}>PlanetaryPortfolio</h1>
+                                <span class="chalk-line"></span>
+                                <div className='projects-link-container'>
+                                
+                                                <a href="https://github.com/Tybenson0/QuantumPortfolio" target='_blank' rel='noreferrer'><svg className='project-link'>
+                                    <use href="/icons/icons.svg#code" />
+                                </svg></a>
+                                </div>
+                            </div>
             
                         </div>
                         </SwiperSlide>

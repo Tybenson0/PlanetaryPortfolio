@@ -399,6 +399,7 @@
     border: 0;
     border-bottom: 1px solid var(--primary-color);
     background: transparent;
+    border-radius: 0;
     color: white;
     font-size: 1.4rem;
   }
@@ -425,6 +426,7 @@
     border: 0;
     border-bottom: 1px solid var(--primary-color);
     background: transparent;
+    border-radius: 0;
     color: white;
     font-size: 1.4rem;
   }
@@ -451,6 +453,7 @@
     border: 0;
     border-bottom: 1px solid var(--primary-color);
     background: transparent;
+    border-radius: 0;
     color: white;
     font-size: 1.4rem;
   }
@@ -466,6 +469,7 @@
     padding-bottom: 3px;
     border-bottom: 1px solid var(--primary-color);
     background: transparent;
+    border-radius: 0;
     color: white;
     font-size: 1.4rem;
   }

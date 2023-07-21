@@ -1,7 +1,10 @@
 import React, { useState, useEffect} from 'react';
 import { useSelector} from 'react-redux';
 import {motion} from 'framer-motion'
+import {useDispatch} from 'react-redux';
+import { selectString,} from './app/esker';
 const CampSite = () => {
+  const dispatch = useDispatch();
     const {selectedString, display } = useSelector(state => state.esker);
     
     const [isLoading, setIsLoading] = useState(true);
@@ -51,7 +54,7 @@ const CampSite = () => {
               <motion.p 
               key={selectedString}
               initial={{ opacity: 0 }}
-              animate={isLoading ? {} : { opacity: 1, transition: { delay: 1.25 } }}
+              animate={isLoading ? {} : { opacity: 1, transition: 1 }}
               exit={{ opacity: 0 }}
               className="esker-dialogue">{selectedString}</motion.p>
         </div>
@@ -66,7 +69,7 @@ const CampSite = () => {
         animate={isLoading ? {} : { opacity: 1 }}
         exit={{ opacity: 0.01 }}
         transition={{ duration: 3 }}
-        className='ship-container'><img src='campsite/ship.webp' alt='ship' className='ship'></img></motion.div>
+        className='ship-container'><img src='campsite/ship.webp' alt='ship' className='ship' onClick={() => dispatch(selectString(26))}></img></motion.div>
         <motion.div 
         initial={{ opacity: 0 }}
         animate={isLoading ? {} : { opacity: 1 }}
@@ -85,11 +88,11 @@ const CampSite = () => {
           <img src='campsite/tree-2.svg' alt='tree' className='tree'></img>
           <img src='campsite/tree-2.svg' alt='tree' className='tree'></img>
           <img src='campsite/tree-2.svg' alt='tree' className='tree'></img>
-          <img src='campsite/shack.webp' alt='shack' className='shack'></img>
+          <img src='campsite/shack.webp' alt='shack' className='shack' onClick={() => dispatch(selectString(27))}></img>
         </motion.div>
           
           
-        <img className='rat' src='/campsite/rat.svg' alt='rat'></img>
+        <img className='rat' src='/campsite/rat.svg' alt='rat' onClick={() => dispatch(selectString(25))}></img>
         <motion.div 
         initial={{ opacity: 0 }}
         animate={isLoading ? {} : { opacity: 1 }}
