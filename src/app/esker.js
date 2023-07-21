@@ -28,7 +28,7 @@ export const eskerSlice = createSlice({
     'SEO optimization, and any optimization in general, is very, very important to me as I want as many people to be able to access/use my work easily.',
     'Git and GitHub, I mean, what\'s there to say? Every dev has to know these guys.',
     '"There will be no humans elsewhere. Only here. Only on this small planet. We are as rare as well as an endangered species. Every one of us, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another." - Carl Sagan',
-    '"When we look out into space, we are looking into our origins, because we are truly children of the stars." - Brian Cox',
+    '"When we look out into space, we are looking into our own origins, because we are truly children of the stars." - Brian Cox',
     'Achievement! "SPACE RAT"',
     "Quit touchin' my ship!",
     'Can you believe rent for this cabin is 1700 credits a lunar month? This dang space inflation.'],
