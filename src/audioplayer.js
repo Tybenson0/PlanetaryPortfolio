@@ -19,14 +19,14 @@ const AudioPlayer = ({ audioSrc }) => {
     const fadeInterval = setInterval(() => {
       currentVolume += fadeStep;
       if (currentVolume >= 1) {
-        audioElement.volume = 1;
+        audioElement.volume = .5;
         clearInterval(fadeInterval);
       } else {
-        audioElement.volume = currentVolume;
+        audioElement.volume = currentVolume * 0.5; // Adjust the scaling factor (0.5) as desired
       }
     }, fadeDuration * 5);
   };
-
+  
   const fadeOutAudio = () => {
     const audioElement = audioRef.current;
     let currentVolume = audioElement.volume;
@@ -38,9 +38,9 @@ const AudioPlayer = ({ audioSrc }) => {
         audioElement.pause();
         clearInterval(fadeInterval);
       } else {
-        audioElement.volume = currentVolume;
+        audioElement.volume = currentVolume * 0.5; // Adjust the scaling factor (0.5) as desired
       }
-    }, fadeDuration * 5);
+    }, fadeDuration * 10);
   };
 
   useEffect(() => {
