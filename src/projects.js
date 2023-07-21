@@ -109,7 +109,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title' onClick={() => dispatch(selectString(5))}>PlanetaryPortfolio</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(28))} >PlanetaryPortfolio</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
                                 
