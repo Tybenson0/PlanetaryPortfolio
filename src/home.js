@@ -21,7 +21,7 @@ const Home = () => {
       transition={{ duration: 0.5 }}
       className='home'>
                 <div className='main-link-container'>
-                <a href="/TB-Dev-Resumee.pdf " target='_blank' rel="noreferrer"><svg className='main-link'>
+                <a href="/Ty-B-Dev-Resume.pdf" target='_blank' rel="noreferrer"><svg className='main-link'>
             <use  href="icons/icons.svg#resume" />
                   </svg></a>
                     <a href="https://github.com/Tybenson0" target='_blank' rel="noreferrer"><svg className='main-link'>

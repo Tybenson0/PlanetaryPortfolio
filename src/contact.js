@@ -23,7 +23,7 @@ const Contact = () => {
     >
       <div className='contact-form-container'>
         <div className='clip-board-head'>
-          <a href='/TB-Dev-Resumee.pdf' target='_blank' rel='noreferrer'>
+          <a href='/Ty-B-Dev-Resume.pdf' target='_blank' rel='noreferrer'>
             <svg className='contact-link'>
               <use href='icons/icons.svg#resume' />
             </svg>

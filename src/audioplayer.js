@@ -22,7 +22,7 @@ const AudioPlayer = ({ audioSrc }) => {
         audioElement.volume = .5;
         clearInterval(fadeInterval);
       } else {
-        audioElement.volume = currentVolume * 0.5; // Adjust the scaling factor (0.5) as desired
+        audioElement.volume = currentVolume * 0.3; // Adjust the scaling factor (0.5) as desired
       }
     }, fadeDuration * 5);
   };
@@ -38,7 +38,7 @@ const AudioPlayer = ({ audioSrc }) => {
         audioElement.pause();
         clearInterval(fadeInterval);
       } else {
-        audioElement.volume = currentVolume * 0.5; // Adjust the scaling factor (0.5) as desired
+        audioElement.volume = currentVolume * 0.3; // Adjust the scaling factor (0.5) as desired
       }
     }, fadeDuration * 10);
   };
