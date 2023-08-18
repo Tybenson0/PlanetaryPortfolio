@@ -54,7 +54,7 @@ const CampSite = () => {
         <motion.p 
       key={selectedString}
       initial={{ opacity: 0 }}
-      animate={isLoading ? {} : { opacity: 1, transition:  { duration: 1 } }}
+      animate={isLoading ? {} : { opacity: 1, transition:  { duration: 1.6 } }}
       exit={{ opacity: 0 }}
       className="esker-dialogue"
     >
