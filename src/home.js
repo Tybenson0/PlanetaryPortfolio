@@ -7,6 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     // Simulating a delay of 1 second for demonstration purposes
+  
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -40,3 +41,5 @@ const Home = () => {
 };
 
 export default Home;
+
+//test
