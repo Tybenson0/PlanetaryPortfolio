@@ -40,41 +40,47 @@ const Projects = () => {
                         <div className='projects-flex'>
                             <div className='project-container'>
                                 <button>
-                                    <h1 className='project-title' onClick={() => dispatch(selectString(1))}>SoCalTubSpecialist</h1>
+                                    <h1 className='project-title' onClick={() => dispatch(selectString(1))}>ASTEROIDA</h1>
                                 </button>
                                 <span class="chalk-line"></span>
             
                                 <div className='projects-link-container'>
-                                <a href="https://socaltubspecialist.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#link" />
-                                </svg></a>
-                                                <a href="https://github.com/Tybenson0/socaltubs" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="https://asteroidia.onrender.com" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/asteroidia.png" alt="Asteroida webpage" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/Asteroidia.git" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title' onClick={() => dispatch(selectString(2))}>AimeeOkiFoundation</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(2))}>VOLKSWAGONEER</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                    <a href=" https://aimeeokifoundation.com/" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#link" />
-                                </svg></a>
-                                                <a href="https://github.com/Tybenson0/AimeeOki " target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="https://volkswagoneer.onrender.com" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/volkswagoneer.png" alt="Volkswagoneer webpage" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/Volkswagoneer.git" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title' onClick={() => dispatch(selectString(3))}>TyTheCodeGuy</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(3))}>THE PI PONICS PROJECT</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                    <a href="https://tythecodeguy.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#link" />
-                                </svg></a>
-                                                <a href="https://github.com/Tybenson0/Portfolio" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="/" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/pi-ppnics.png" alt="pi-ponics webpage" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/The-Pi-Ponics-Project.git" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -83,39 +89,46 @@ const Projects = () => {
             <div className='projects-flex'>
                             <div className='project-container'>
                                 <button>
-                                    <h1 className='project-title' onClick={() => dispatch(selectString(4))}>Moshified</h1>
+                                    <h1 className='project-title' onClick={() => dispatch(selectString(4))}>THE AIMEE OKI FOUNDATION</h1>
                                 </button>
                                 <span class="chalk-line"></span>
-            
                                 <div className='projects-link-container'>
-                                <a href="https://moshifiedmockapp.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#link" />
-                                </svg></a>
-                                                <a href="https://github.com/Tybenson0/Mock-app" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="https://aimee-oki-foundation.vercel.app/" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/aimee.png" alt="Aimee oki webpage" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/AimeeOkiFoundation" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title' onClick={() => dispatch(selectString(5))}>RememberThat</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(5))}>Python Package Delivery</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                    <a href=" https://remember-test.netlify.app/" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#link" />
-                                </svg></a>
-                                                <a href="https://github.com/Tybenson0/RememberIt" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="https://www.youtube.com/watch?v=MapfSDed65Q" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/10AM3.png" alt="Python package video" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/Python-Package-Delivery.git" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                             <div className='project-container'>
-                                <h1 className='project-title' onClick={() => dispatch(selectString(28))} >PlanetaryPortfolio</h1>
+                                <h1 className='project-title' onClick={() => dispatch(selectString(28))} >C++ Class Roster</h1>
                                 <span class="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                
-                                                <a href="https://github.com/Tybenson0/QuantumPortfolio" target='_blank' rel='noreferrer'><svg className='project-link'>
-                                    <use href="/icons/icons.svg#code" />
-                                </svg></a>
+                                    <a href="https://www.youtube.com/watch?v=_KSN1Xk3Tfw" target='_blank' rel='noreferrer'>
+                                        <img src="/icons/class_roster.png" alt="cPP roster video" className='projects-image'></img>
+                                    </a>
+                                    <a href="https://github.com/Tybenson0/CPP-Class-Roster.git" target='_blank' rel='noreferrer'>
+                                        <svg className='project-link'>
+                                        <use href="/icons/icons.svg#github2" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
             

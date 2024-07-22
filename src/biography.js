@@ -21,14 +21,10 @@ const Biography = () => {
         className='biography-container'>
             <div className='bio-border'>
                 <h1 className='bio-title'>Hi, my name is Ty!</h1>
-                <h2 className='bio-location'>Santa Clarita, CA, 91355</h2>
                 <span class="chalk-line"></span>
                 <p className='bio-text'>
-                Hello, y'all! Hi i'm Ty, a laid-back web developer residing in the countryside  
-                of Santa Clarita, California. I find solace and inspiration in the great outdoors, where I frequently 
-                go on hikes taking in the scenery. When not exploring, 
-                you'll find me playing games with my friends, watching my favorite shows, or getting my 
-                hands dirty with cars.
+                Hello y'all, From the bottom of my heart I want to thank you for taking the time to check out this little pocket universe I created,
+                it means alot to me. I was born and raised in hills of Southern California where I learned my passion for computers and everything techknology
                 </p>
                 <p className='bio-text'>
                 For the past two years, I've been waist deep in the world of web development, and the incredible technology it brings to light. 

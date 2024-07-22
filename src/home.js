@@ -34,7 +34,6 @@ const Home = () => {
                 </div>
                 <div className='title-container'>
                     <h1 className='title-name'>Ty R. Benson</h1>
-                    <h2 className='title-title'>Web Developer</h2>
                 </div>
             </motion.div>
     );

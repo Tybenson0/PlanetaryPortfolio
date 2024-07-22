@@ -30,17 +30,17 @@ const Nav = () => {
   className='nav-container-0'>
             <ul className='nav-ul'>
                 <li className='nav-li'>
-                    <Link to="projects" className='nav-link' onClick={() => handleLinkClick(0)}>Projects</Link>
-                </li>
+                    <Link to="projects" className='nav-link' onClick={() => handleLinkClick(0)}>Projects & Work Experience</Link>
+                </li> 
+                <p className='nav-link'>/</p>
                 <li className='nav-li'>
-                    <Link to="skills" className='nav-link' onClick={() => handleLinkClick(6)}>Skills</Link>
+                    <Link to="biography" className='nav-link' onClick={() => handleLinkClick(23)} >About Me</Link>
                 </li>
+                <p className='nav-link'>/</p>
                 <li className='nav-li'>
-                    <Link to="biography" className='nav-link' onClick={() => handleLinkClick(23)} >Biography</Link>
+                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(24)}>Work With Me!</Link>
                 </li>
-                <li className='nav-li'>
-                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(24)}>Contact</Link>
-                </li>
+                <p className='nav-link'>/</p>
                 <li className='nav-li'>
                     <Link to="/" className='nav-link' 
                     onClick={() => handleLinkClick()}>Home</Link>

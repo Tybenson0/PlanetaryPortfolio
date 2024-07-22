@@ -29,26 +29,25 @@
      left: -50%;
      background-image: url('/public/stars/Stars-bg-desktop.svg'); 
      background-repeat: no-repeat;
-     background-size: ;;
      animation: Universe-Rotation 330s infinite linear;
      z-index: -1;
    }
   /* code below is for navbar */
   .nav-container-0 {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/4;
-    width: fit-content;
-    height: 100%;
+    width: 100%;
+    height: fit-content;
     position: absolute;
-    z-index: 9999;
+    z-index: 9990;
   }
   
   .nav-ul {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    gap: 15%;
+    gap: 3%;
     margin: 0;
     padding: 4rem 1rem 1rem 4rem;
     list-style: none;
@@ -58,6 +57,8 @@
     color: #E57A1B;
     list-style: none;
     font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
   }
   .home {
     width: 100%;
@@ -128,13 +129,15 @@
     align-self: center;
     grid-row: 1/8;
     grid-column: 1/9;
+    
   }
   .projects-flex {
     width: 100%;
-    height: 90%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 3rem;
   }
   .project-container {
     width: 100%;
@@ -194,13 +197,19 @@
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   gap: 2rem;
+   gap: 3rem;
     
     
   }
   .project-link {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .projects-image {
+    width: 25rem;
+    height: 15rem;
+    border: 1px solid #ffffff;
   }
   .skills-container {
     width: 100%;
@@ -492,8 +501,8 @@
   .eskers-dialogue-container {
     width: 90%;
     height: fit-content;
-    grid-row: 5/8;
-    grid-column: 1/4;
+    grid-row: 6/9;
+    grid-column: 1/5;
     justify-self: end;
     align-self: center;
     display: flex;
@@ -511,7 +520,7 @@
     height: fit-content;
     text-align: center;
     font-size: 1.8rem;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     color: #fff;
     white-space: normal;
     padding-right: 10px;
@@ -678,7 +687,7 @@
   .shack {
     width: 10rem;
     height: 10rem;
-    filter: brightness(25%);
+    filter: brightness(55%);
     cursor: pointer;
   }
   .ship-container {
@@ -691,15 +700,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 2;
     transform: translate(2rem, -.5rem) rotate(25deg);
-    filter: brightness(70%);
+    filter: brightness(80%);
+    z-index: 9999;
   }
   .ship {
     width: 7rem;
     height: 7rem;
     position: absolute;
     cursor: pointer;
+    
   }
   .sound-container {
     width: 100%;
@@ -811,7 +821,7 @@
   .rat {
     width: 3rem;
     height: 3rem;
-    grid-row: 10/11;
+    grid-row: 13/14;
     grid-column: 1/4;
     position: absolute;
     justify-self: center;
