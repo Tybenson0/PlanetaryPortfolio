@@ -45,7 +45,7 @@ const Contact = () => {
           <input
             type='name'
             name='name'
-            placeholder='luke skywalker...'
+            placeholder='Goku Kakarot'
             className='name-input'
             required
           />
@@ -53,7 +53,7 @@ const Contact = () => {
           <input
             type='email'
             name='email'
-            placeholder='blabla@gmail.com'
+            placeholder='$aiyanLegend@gmail.com'
             className='email-input'
             required
           />

@@ -24,13 +24,14 @@ const Biography = () => {
                 <span class="chalk-line"></span>
                 <p className='bio-text'>
                 Hello y'all, From the bottom of my heart I want to thank you for taking the time to check out this little pocket universe I created,
-                it means alot to me. I was born and raised in hills of Southern California where I learned my passion for computers and everything techknology
+                it means alot to me. Growing up I was always the black sheep of the family, where my parents and my sister all went into medical or trades and
+                I ended up finding my passion in technology and the outdoors. This passion lead me to attend school at Western Governors university where I 
+                achieved my bachelors in Computer Science. My dream is to become a great programmer, not the best. I want to create projects that test my limits
+                allowing me to become better each and every day, projects that help people in some way and potentially better the world. Thats my dream...
+    
                 </p>
                 <p className='bio-text'>
-                For the past two years, I've been waist deep in the world of web development, and the incredible technology it brings to light. 
-                 Tech is always changing, so I stay up to date ensuring that my work remains
-                 innovative and cutting-edge. I'm excited to make a lasting impact in the web world through my abilities.
-                  I hope you enjoyed your stay in my little pocket universe, hopefully it brought some joy to your day! 
+
                 </p>
                 <p className='bio-text'>Thank you.</p>
             </div>

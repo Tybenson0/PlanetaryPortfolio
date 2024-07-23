@@ -50,18 +50,18 @@
   }
   
   .nav-ul {
-    width: 100%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2.6rem;
+    gap: 3rem;
     margin: 0;
     list-style: none;
   }
   .nav-link {
     font-family: wilds;
     color: #E57A1B;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .home {
     width: 100%;
@@ -115,14 +115,15 @@
     letter-spacing: 3px;
   }
   .projects-container {
-    width: 100%;
-    height: 100%;
-    grid-row: 1/6;
+    width: 95%;
+    height: 90%;
+    grid-row: 1/7;
     grid-column: 1/7;
     display: grid;
     grid-template-columns: var(--column);
     grid-template-rows: repeat(10, 1fr);
     position: absolute;
+    right: 0;
     z-index: 5;
   }
   .swiper-projects {
@@ -130,7 +131,7 @@
     height: 90%;
     align-self: center;
     grid-row: 1/11;
-    grid-column: 4/9;
+    grid-column: 3/9;
   }
   .projects-flex {
     width: 100%;
@@ -138,17 +139,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 0rem;
   }
   .project-container {
     width: 100%;
     max-height: 100%;
     grid-row: 1/3;
     grid-column: 3/9;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
   }
   .project-container:nth-of-type(2n) {
     width: 100%;
@@ -202,8 +203,14 @@
     
   }
   .project-link {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .projects-image {
+    width: 12rem;
+    height: 8rem;
+    border: 1px solid #ffffff;
   }
   .skills-container {
     width: 100%;
@@ -276,7 +283,7 @@
     grid-column: 3/9;
     grid-row: 2/11;
     justify-self: center;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -514,7 +521,7 @@
     width: 100%;
     height: fit-content;
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    line-height: 2rem;
     color: #fff;
     white-space: normal;
     padding-right: 10px;
@@ -652,11 +659,14 @@
     z-index: 2;
     rotate: -18deg;
     transform: translate(0, 1.4rem);
+    z-index: 9999;
   }
   .shack {
     width: 7rem;
     height: 7rem;
     filter: brightness(40%);
+    position: relative;
+    z-index: 9999;
   }
   .ship-container {
     width: 100%;
@@ -676,6 +686,7 @@
     height: 5rem;
     position: absolute;
     filter: brightness(80%);
+    z-index: 9999;
   }
   
   .banjo-container {

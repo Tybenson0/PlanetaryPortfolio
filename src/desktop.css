@@ -29,7 +29,7 @@
      left: -50%;
      background-image: url('/public/stars/Stars-bg-desktop.svg'); 
      background-repeat: no-repeat;
-     animation: Universe-Rotation 330s infinite linear;
+     animation: Universe-Rotation 480s infinite linear;
      z-index: -1;
    }
   /* code below is for navbar */
@@ -47,7 +47,7 @@
     height: fit-content;
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 8%;
     margin: 0;
     padding: 4rem 1rem 1rem 4rem;
     list-style: none;
@@ -276,8 +276,8 @@
     z-index:5;
   }
   .bio-border {
-    width: 55%;
-    height: 75%;
+    width: 45%;
+    height: fit-content;
     grid-column: 1/9;
     grid-row: 1/6;
     border: 2px solid var(--primary-color);
@@ -325,7 +325,7 @@
     z-index: 5;
   }
   .contact-form-container {
-    width: 100%;
+    width: 90%;
     height: 100%;
     grid-row: 1/7;
     grid-column: 1/9;
@@ -336,7 +336,7 @@
   }
   
   .clip-board-head {
-    width: 70%;
+    width: 40%;
     height: 55%;
     grid-column: 3/7;
     grid-row: 1/2;
@@ -687,7 +687,7 @@
   .shack {
     width: 10rem;
     height: 10rem;
-    filter: brightness(55%);
+    filter: brightness(50%);
     cursor: pointer;
   }
   .ship-container {

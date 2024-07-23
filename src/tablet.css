@@ -76,7 +76,7 @@
     font-family: wilds;
     color: #E57A1B;
     list-style: none;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
   .home {
     width: 100%;
@@ -147,11 +147,13 @@
     grid-column: 3/9;
   }
   .projects-flex {
-    width: 100%;
+    width: 80%;
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
+    float: right;
   }
   .project-container {
     width: 100%;
@@ -187,7 +189,7 @@
   .project-title {
     font-family: chalk;
     color: white;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 300;
     text-align: center;
     margin-top: 1rem;
@@ -218,6 +220,11 @@
   .project-link {
     width: 5.5rem;
     height: 5.5rem;
+  }
+  .projects-image {
+    width: 12rem;
+    height: 8rem;
+    border: 1px solid #ffffff;
   }
   .skills-container {
     width: 100%;
@@ -281,7 +288,7 @@
     z-index:5;
   }
   .bio-border {
-    width: 85%;
+    width: 75%;
     max-height: 95%;
     grid-column: 3/9;
     grid-row: 1/7;
@@ -758,8 +765,8 @@
     transform: translate(-4rem, -1rem);
   }
   .music-button {
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 35%;
     padding: 0;
     position: absolute;
     z-index: 9999;
