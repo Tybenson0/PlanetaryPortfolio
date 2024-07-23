@@ -32,7 +32,7 @@ export const eskerSlice = createSlice({
     'Achievement! "SPACE RAT"',
     "Quit touchin' my ship!",
     'Can you believe rent for this cabin is 1700 credits a lunar month? This dang space inflation.',
-  'This Portfolio is made out of React and Redux with some libraries for functionality.'],
+  'C++ Class Roster is a  fully functional class roster written in C++, allowing for the creation, reading, updating, and deleting of class rosters. '],
     selectedString: 'Hello Space Traveler! ',
     display: false,
   },
