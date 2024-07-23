@@ -39,7 +39,7 @@ const Contact = () => {
             </svg>
           </a>
         </div>
-        <form data-netlify-honeypot="bot-field" name="contact" method="POST" data-netlify="true" netlify="no-success-page" action='.' className='clip-board-body'>
+        <form  name="contact" method="POST"  action="https://formspree.io/f/mblrdkey" className='clip-board-body'>
           <input type='hidden' name='form-name' value='contact' />
           <label className='form-name'>Your Name:</label>
           <input

@@ -19,7 +19,7 @@ const AudioPlayer = ({ audioSrc }) => {
     const fadeInterval = setInterval(() => {
       currentVolume += fadeStep;
       if (currentVolume >= 1) {
-        audioElement.volume = .5;
+        audioElement.volume = .3;
         clearInterval(fadeInterval);
       } else {
         audioElement.volume = currentVolume * 0.3; // Adjust the scaling factor (0.5) as desired

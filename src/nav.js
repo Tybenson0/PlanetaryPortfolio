@@ -38,7 +38,7 @@ const Nav = () => {
                 </li>
                 
                 <li className='nav-li'>
-                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(24)}>Work With Me!</Link>
+                    <Link to="contact" className='nav-link' onClick={() => handleLinkClick(24)}>Contact Me!</Link>
                 </li>
                 
                 <li className='nav-li'>

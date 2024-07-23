@@ -5,11 +5,11 @@ export const eskerSlice = createSlice({
   initialState: {
     // Existing state properties
     strings: ['Welcome to the projects page! click or tap the title to hear more information about the project, or the image to be taken to a live demo, or the github icon to be taken to the repository NOTE: some pages are hosted on render.com\'s free tier and therefore could take 1-2 minutes to load.',
-    'ASTEROIDA is a asteroid prediction application using the NASA Near Earth Objects Web Service along with machine learning techniques to predict potential asteroid risk ',
+    'ASTEROIDA is a asteroid prediction application using the NASA Near Earth Objects Web Service along with machine learning in order to predict potential asteroid risk ',
     'VOLKSWAGONEER is a Volkswagen Parts website built with Java and Springboot which also earned the WGU Exellence Award',
     'The Pi Ponics Project is a self sustaining plant growing system controlled by a Raspberry Pi Pico running micropython with the purpose of automating aspects of plant growth such as light and nutrient delivery',
     'The Aimee Oki Foundation is a CRUD webpage made for a real bi-polar awareness foundation using HTML CSS ans JavaScript. ',
-    'Python Package Delivery us a package delivery app made in Python that dynamically loads and delivers packages according to requirements',
+    'Python Package Delivery is a package delivery app made in Python that uses a greedy nearest neighbor algorithm in order to dynamically load and deliver packages according to requirements',
     'C++ Class Roster is a  fully functional class roster written in C++, allowing for the creation, reading, updating, and deleting of class rosters. ',
     'Svelte is the latest framework technology I have been working with and it will be featured in future projects due to its simplicity.',
     'HTML, the bread and butter of web development, oh, I am very familiar with her if I do say so myself.',
@@ -32,7 +32,7 @@ export const eskerSlice = createSlice({
     'Achievement! "SPACE RAT"',
     "Quit touchin' my ship!",
     'Can you believe rent for this cabin is 1700 credits a lunar month? This dang space inflation.',
-  'C++ Class Roster is a  fully functional class roster written in C++, allowing for the creation, reading, updating, and deleting of class rosters. '],
+  'C++ Class Roster is a fully functional class roster written in C++, allowing for the creation, reading, updating, and deleting of class rosters. '],
     selectedString: 'Hello Space Traveler! ',
     display: false,
   },

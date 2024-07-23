@@ -8,6 +8,9 @@
   #root {
     width: 100%;
     height: 100%;
+    --swiper-theme-color: #E57A1B;
+     --swiper-pagination-bullet-inactive-color: #ffffff;
+     --swiper-pagination-bullet-inactive-opacity: .8;
   }
   .level-0-container {
     position: relative;
@@ -46,7 +49,7 @@
     height: fit-content;
     position: absolute;
     z-index: 9999;
-    margin: 2rem 0 0 2rem;
+    margin: 2rem 0 0 1rem;
   }
   
   .nav-ul {
@@ -62,6 +65,7 @@
     font-family: wilds;
     color: #E57A1B;
     font-size: 1.6rem;
+    text-align: center;
   }
   .home {
     width: 100%;
@@ -209,7 +213,7 @@
 
   .projects-image {
     width: 12rem;
-    height: 8rem;
+    height: 7rem;
     border: 1px solid #ffffff;
   }
   .skills-container {
@@ -543,8 +547,8 @@
     rotate: -3deg;
   }
   .planet-1 {
-    width: 100%;
-    height: 100%;
+    width: 40vw;
+    height: 40vh;
     grid-row: 4/7;
     grid-column: 1/7;
     position: absolute;
