@@ -547,8 +547,8 @@
     rotate: -3deg;
   }
   .planet-1 {
-    width: 40vw;
-    height: 40vh;
+    width: 100vw;
+    height: 100vh;
     grid-row: 4/7;
     grid-column: 1/7;
     position: absolute;
