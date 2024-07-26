@@ -73,7 +73,7 @@ const Projects = () => {
                                 <h1 className='project-title' onClick={() => dispatch(selectString(3))}>THE PI PONICS PROJECT</h1>
                                 <span className="chalk-line"></span>
                                 <div className='projects-link-container'>
-                                    <a href="/" target='_blank' rel='noreferrer'>
+                                    <a href="https://www.youtube.com/shorts/MetlIHa8CLs" target='_blank' rel='noreferrer'>
                                         <img src="/icons/pi-ppnics.png" alt="pi-ponics webpage" className='projects-image'></img>
                                     </a>
                                     <a href="https://github.com/Tybenson0/The-Pi-Ponics-Project.git" target='_blank' rel='noreferrer'>
