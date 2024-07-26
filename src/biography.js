@@ -21,7 +21,7 @@ const Biography = () => {
         className='biography-container'>
             <div className='bio-border'>
                 <h1 className='bio-title'>Hi, my name is Ty!</h1>
-                <span class="chalk-line"></span>
+                <span className="chalk-line"></span>
                 <p className='bio-text'>
                 Hello y'all, From the bottom of my heart I want to thank you for taking the time to check out this little pocket universe I created,
                 it means alot to me. Growing up I was always the black sheep of the family, where my parents and my sister all went into medical or trades and
